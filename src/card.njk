@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Карточка товара</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-product-card">
+                <div class="block-product-card__top">
+                    <div class="container">
+                        <div class="block-product-card__content">
+                            <div class="images-product">
+                                <div class="images-product__swiper">
+                                    <div class="images-product__slider swiper">
+                                        <div class="images-product__wrapper swiper-wrapper">
+                                            <a href="img/image6.webp" data-fancybox="gallery2"
+                                                class="images-product__slide swiper-slide">
+                                                <img src="img/image6.webp" alt="">
+                                            </a>
+                                            <a href="img/image7.webp" data-fancybox="gallery2"
+                                                class="images-product__slide swiper-slide">
+                                                <img src="img/image7.webp" alt="">
+                                            </a>
+                                            <a href="img/image12.webp" data-fancybox="gallery2"
+                                                class="images-product__slide swiper-slide">
+                                                <img src="img/image12.webp" alt="">
+                                            </a>
+                                            <a href="img/image13.webp" data-fancybox="gallery2"
+                                                class="images-product__slide swiper-slide">
+                                                <img src="img/image13.webp" alt="">
+                                            </a>
+                                            <a href="img/image14.webp" data-fancybox="gallery2"
+                                                class="images-product__slide swiper-slide">
+                                                <img src="img/image14.webp" alt="">
+                                            </a>
+                                            <a href="img/image6.webp" data-fancybox="gallery2"
+                                                class="images-product__slide swiper-slide">
+                                                <img src="img/image6.webp" alt="">
+                                            </a>
+                                            <a href="img/image7.webp" data-fancybox="gallery2"
+                                                class="images-product__slide swiper-slide">
+                                                <img src="img/image7.webp" alt="">
+                                            </a>
+                                            <a href="img/image12.webp" data-fancybox="gallery2"
+                                                class="images-product__slide swiper-slide">
+                                                <img src="img/image12.webp" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="images-product__arrow-prev arrow-prev">
+                                        <svg aria-hidden="true" width="14" height="26">
+                                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="images-product__arrow-next arrow-next">
+                                        <svg aria-hidden="true" width="14" height="26">
+                                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="images-product__thumbs">
+                                    <div class="images-product__thumb swiper">
+                                        <div class="images-product__wrapper swiper-wrapper">
+                                            <div class="images-product__slide swiper-slide">
+                                                <img src="img/image6.webp" alt="">
+                                            </div>
+                                            <div class="images-product__slide swiper-slide">
+                                                <img src="img/image7.webp" alt="">
+                                            </div>
+                                            <div class="images-product__slide swiper-slide">
+                                                <img src="img/image12.webp" alt="">
+                                            </div>
+                                            <div class="images-product__slide swiper-slide">
+                                                <img src="img/image13.webp" alt="">
+                                            </div>
+                                            <div class="images-product__slide swiper-slide">
+                                                <img src="img/image14.webp" alt="">
+                                            </div>
+                                            <div class="images-product__slide swiper-slide">
+                                                <img src="img/image6.webp" alt="">
+                                            </div>
+                                            <div class="images-product__slide swiper-slide">
+                                                <img src="img/image7.webp" alt="">
+                                            </div>
+                                            <div class="images-product__slide swiper-slide">
+                                                <img src="img/image12.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-product-card__right product-card-info">
+                                <h1 class="title2">ЖК «Голос Меридиана»</h1>
+                                <div class="product-card-info__locations">
+                                    <div class="product-card-info__location">
+                                        <svg aria-hidden="true" width="15" height="18">
+                                            <use xlink:href="img/sprite.svg#location"></use>
+                                        </svg>
+                                        <span>Иваново</span>
+                                    </div>
+                                    <a href="./" class="btn bg-blue">
+                                        <span>На карте</span>
+                                    </a>
+                                </div>
+                                <div class="product-card-info__text">
+                                    <p>
+                                        Там, где роскошная жизнь
+                                        достигает новых высот
+                                    </p>
+                                    <p>
+                                        Расположенное в самом сердце
+                                        города, среди пышной зелени и
+                                        живописных видов на
+                                        Центральный парк
+                                    </p>
+                                </div>
+                                <div class="product-card-info__info">
+                                    <div class="product-card-info__price">
+                                        <svg aria-hidden="true" width="26" height="26">
+                                            <use xlink:href="img/sprite.svg#money"></use>
+                                        </svg>
+                                        <span>3.750.000</span>
+                                        <svg aria-hidden="true" width="24" height="26">
+                                            <use xlink:href="img/sprite.svg#ruble"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-card-info__square">
+                                        <svg aria-hidden="true" width="25" height="25">
+                                            <use xlink:href="img/sprite.svg#m2"></use>
+                                        </svg>
+                                        <span>47 кв.м</span>
+                                    </div>
+                                </div>
+                                <a href="./" data-popup="#form3" class="btn bg-green">
+                                    <span>оставить заявку</span>
+                                    <svg aria-hidden="true" width="10" height="18">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div data-tabs class="tabs-product-card">
+                        <nav data-tabs-titles class="tabs-product-card__navigation">
+                            <button type="button" class="tabs-product-card__title _tab-active">
+                                <span>О квартире</span>
+                            </button>
+                            <button type="button" class="tabs-product-card__title">
+                                <span>О доме</span>
+                            </button>
+                            <button type="button" class="tabs-product-card__title">
+                                <span>О ЖК</span>
+                            </button>
+                        </nav>
+                        <div data-tabs-body class="tabs-product-card__content">
+                            <div class="tabs-product-card__body">
+                                <div class="tabs-product-card__items">
+                                    <div class="tabs-product-card__text">
+                                        <p>
+                                            Квартира располагается на 12 этаже 24-этажного дома в ЖК Меридиан.Застройщик
+                                            -
+                                            Специализированный застройщик ЛСР. Недвижимость-Урал, сдача дома - I квартал
+                                            2026
+                                            года, высота потолков 2.5 м. Парковка автомобилей - наземная.
+                                            Инфраструктура:
+                                            школа,
+                                            детский сад, детские площадки, спортивные площадки, места для отдыха,
+                                            супермаркет.
+                                        </p>
+                                        <p>
+                                            "Меридиан" - уютный жилой комплекс от "Группы ЛСР", который расположен в
+                                            активно
+                                            развивающейся части Екатеринбурга - Академическом районе. За счет близости
+                                            лесного
+                                            массива и реки Патрушихи в локации сложилась благоприятная экологическая
+                                            обстановка.
+                                        </p>
+                                        <p>
+                                            В состав жилого квартала "Меридиан" входит шестнадцать панельных домов
+                                            высотой
+                                            от 8
+                                            до 25 этажей с разноцветными фасадами, а также здание образовательного
+                                            центра.
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Тип жилья
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                Новостройка
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Общая площадь
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                36,6 м²
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Жилая площадь
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                10,7 м²
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Площадь кухни
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                17 м²
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Высота потолков
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                2,5 м
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Балкон/лоджия
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                1 балкон
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Отделка
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                Чистовая
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs-product-card__body">
+                                <div class="tabs-product-card__items">
+                                    <div class="tabs-product-card__text">
+                                        <p>
+                                            Квартира располагается на 12 этаже 24-этажного дома в ЖК Меридиан.Застройщик
+                                            -
+                                            Специализированный застройщик ЛСР. Недвижимость-Урал, сдача дома - I квартал
+                                            2026
+                                            года, высота потолков 2.5 м. Парковка автомобилей - наземная.
+                                            Инфраструктура:
+                                            школа,
+                                            детский сад, детские площадки, спортивные площадки, места для отдыха,
+                                            супермаркет.
+                                        </p>
+                                        <p>
+                                            "Меридиан" - уютный жилой комплекс от "Группы ЛСР", который расположен в
+                                            активно
+                                            развивающейся части Екатеринбурга - Академическом районе. За счет близости
+                                            лесного
+                                            массива и реки Патрушихи в локации сложилась благоприятная экологическая
+                                            обстановка.
+                                        </p>
+                                        <p>
+                                            В состав жилого квартала "Меридиан" входит шестнадцать панельных домов
+                                            высотой
+                                            от 8
+                                            до 25 этажей с разноцветными фасадами, а также здание образовательного
+                                            центра.
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Тип жилья
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                Новостройка
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Общая площадь
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                36,6 м²
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Жилая площадь
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                10,7 м²
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Площадь кухни
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                17 м²
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Высота потолков
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                2,5 м
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Балкон/лоджия
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                1 балкон
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Отделка
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                Чистовая
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs-product-card__body">
+                                <div class="tabs-product-card__items">
+                                    <div class="tabs-product-card__text">
+                                        <p>
+                                            Квартира располагается на 12 этаже 24-этажного дома в ЖК Меридиан.Застройщик
+                                            -
+                                            Специализированный застройщик ЛСР. Недвижимость-Урал, сдача дома - I квартал
+                                            2026
+                                            года, высота потолков 2.5 м. Парковка автомобилей - наземная.
+                                            Инфраструктура:
+                                            школа,
+                                            детский сад, детские площадки, спортивные площадки, места для отдыха,
+                                            супермаркет.
+                                        </p>
+                                        <p>
+                                            "Меридиан" - уютный жилой комплекс от "Группы ЛСР", который расположен в
+                                            активно
+                                            развивающейся части Екатеринбурга - Академическом районе. За счет близости
+                                            лесного
+                                            массива и реки Патрушихи в локации сложилась благоприятная экологическая
+                                            обстановка.
+                                        </p>
+                                        <p>
+                                            В состав жилого квартала "Меридиан" входит шестнадцать панельных домов
+                                            высотой
+                                            от 8
+                                            до 25 этажей с разноцветными фасадами, а также здание образовательного
+                                            центра.
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Тип жилья
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                Новостройка
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Общая площадь
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                36,6 м²
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Жилая площадь
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                10,7 м²
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Площадь кухни
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                17 м²
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Высота потолков
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                2,5 м
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Балкон/лоджия
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                1 балкон
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tabs-product-card__name">
+                                                <div class="tabs-product-card__icon"></div>
+                                                Отделка
+                                            </div>
+                                            <span></span>
+                                            <div class="tabs-product-card__value">
+                                                Чистовая
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-great-deals">
+                <div class="container">
+                    <div class="block-great-deals__content">
+                        <h2 class="title2">
+                            Самые выгодные предложения<br> <span>для покупки жилья в новостройках</span>
+                        </h2>
+                        <div class="block-great-deals__body">
+                            <div class="block-great-deals__slider swiper">
+                                <div class="block-great-deals__wrapper swiper-wrapper">
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image15.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Однокомнатная квартира в
+                                                ЖК «Голос Меридиана»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>5.000.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>54 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image16.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Двухквартира в ЖК
+                                                «Башни Свободы»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>2.900.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>39 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image17.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Трехкомнатная квартира в
+                                                ЖК «Александровский»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>22.750.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>63 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image15.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Однокомнатная квартира в
+                                                ЖК «Голос Меридиана»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>5.000.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>54 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image16.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Двухквартира в ЖК
+                                                «Башни Свободы»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>2.900.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>39 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <div class="block-great-deals__arrow-prev arrow-prev">
+                                    <svg aria-hidden="true" width="14" height="26">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </div>
+                                <div class="block-great-deals__arrow-next arrow-next">
+                                    <svg aria-hidden="true" width="14" height="26">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-consultation">
+                <div class="container">
+                    <div class="block-consultation__content">
+                        <img loading="lazy" src="img/image4.webp" alt="" class="block-consultation__pic1">
+                        <div class="block-consultation__body">
+                            <div class="block-consultation__center">
+                                <div class="block-consultation__title">Бесплатная консультация</div>
+                                <p>
+                                    Сообщите нам, что именно вы ищете, и мы
+                                    подберем для вас наилучшие варианты
+                                </p>
+                            </div>
+                            <a href="./" data-popup="#form1" class="btn bg-yellow">
+                                <span>Заказать</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/contacts.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b71f8801-d131-4c34-8869-00b3975108f5&amp;lang=ru_RU"></script>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

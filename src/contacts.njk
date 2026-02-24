@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Контакты</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-intro block-intro-blur">
+                <img src="img/banner3.webp" alt="" class="block-intro__banner">
+                <div class="container">
+                    <div class="block-intro__content">
+                        <div class="block-intro__heading-complex">
+                            <h1 class="title1">
+                                У вас есть вопросы?
+                                <br>
+                                <span>Мы всегда готовы помочь!</span>
+                            </h1>
+                            <p>
+                                Оставляйте заявку на звонок сейчас
+                            </p>
+                        </div>
+                        <form action="#" data-dev data-popup-message="#thanks1" class="form">
+                            <div class="form__inputs">
+                                <div class="form__input">
+                                    <input data-required autocomplete="off" type="text" name="form[]"
+                                        data-error="Обязательное поле" placeholder="Введите имя">
+                                </div>
+                                <div class="form__input">
+                                    <input data-required autocomplete="off" type="text" data-error="Обязательное поле"
+                                        name="form[]" placeholder="" class="telephone">
+                                    <div class="form__placeholder">
+                                        <span>+7</span> (999) 999-99-99
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__options">
+                                <div class="form__options-title">Способ связи</div>
+                                <div class="options">
+                                    <label class="options__item">
+                                        <input hidden class="options__input" checked type="radio" value="1"
+                                            name="option">
+                                        <span class="options__label">
+                                            <span class="options__icon"></span>
+                                            <span class="options__text">Telegram</span>
+                                        </span>
+                                    </label>
+                                    <label class="options__item">
+                                        <input hidden class="options__input" type="radio" value="2" name="option">
+                                        <span class="options__label">
+                                            <span class="options__icon"></span>
+                                            <span class="options__text">WhatsApp</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__buttons">
+                                <button type="submit" class="btn bg-yellow">
+                                    <span>Отправить</span>
+                                    <svg aria-hidden="true" width="10" height="18">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </button>
+                                <div class="form__text">
+                                    Нажимая на кнопку “Отправить” вы соглашаетесь с условиями <a href="./">политики
+                                        конфиденциальности</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-map2">
+                <div class="container">
+                    <img loading="lazy" src="img/line/line1.svg" alt="" class="block-map2__line1 line1 line">
+                    <img loading="lazy" src="img/line/line4.svg" alt="" class="block-map2__line2 line2 line">
+                    <img loading="lazy" src="img/line/line5.svg" alt="" class="block-map2__line3 line3 line">
+                    <div class="block-map2__content">
+                        <h1 class="title1">Контакты</h1>
+                        <ul>
+                            <li>
+                                <div class="block-map2__icon">
+                                    <svg aria-hidden="true" width="25" height="30">
+                                        <use xlink:href="img/sprite.svg#location"></use>
+                                    </svg>
+                                </div>
+                                <span>г. Ростов-на-дону, улица Мечникова, 140а, этаж З</span>
+                            </li>
+                            <li>
+                                <div class="block-map2__icon">
+                                    <svg aria-hidden="true" width="30" height="30">
+                                        <use xlink:href="img/sprite.svg#phone1"></use>
+                                    </svg>
+                                </div>
+                                <a href="tel:79203659551">+7 (920) 365-95-51</a>
+                            </li>
+                            <li>
+                                <div class="block-map2__icon">
+                                    <svg aria-hidden="true" width="30" height="30">
+                                        <use xlink:href="img/sprite.svg#time"></use>
+                                    </svg>
+                                </div>
+                                <span>с 9:00 до 19:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="map2" class="map"></div>
+                <div class="container">
+                    <img loading="lazy" src="img/line/line8.svg" alt="" class="block-map2__line4 line1 line">
+                    <img loading="lazy" src="img/line/line9.svg" alt="" class="block-map2__line5 line2 line">
+                    <img loading="lazy" src="img/line/line10.svg" alt="" class="block-map2__line6 line3 line">
+                    <div class="block-map2__content">
+                        <ul>
+                            <li>
+                                <div class="block-map2__icon">
+                                    <svg aria-hidden="true" width="25" height="30">
+                                        <use xlink:href="img/sprite.svg#location"></use>
+                                    </svg>
+                                </div>
+                                <span>г. Иваново, ул. Кузнецова, д.8, 2 этаж, офис 2</span>
+                            </li>
+                            <li>
+                                <div class="block-map2__icon">
+                                    <svg aria-hidden="true" width="30" height="30">
+                                        <use xlink:href="img/sprite.svg#phone1"></use>
+                                    </svg>
+                                </div>
+                                <a href="tel:79203659551">+7 (920) 365-95-51</a>
+                            </li>
+                            <li>
+                                <div class="block-map2__icon">
+                                    <svg aria-hidden="true" width="30" height="30">
+                                        <use xlink:href="img/sprite.svg#time"></use>
+                                    </svg>
+                                </div>
+                                <span>с 9:00 до 19:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="map3" class="map"></div>
+            </div>
+
+            <div class="block-socials">
+                <div class="container">
+                    <div class="block-socials__content">
+                        <div class="block-socials__icons">
+                            <a href="./">
+                                <img loading="lazy" src="img/viber.svg" alt="">
+                            </a>
+                            <a href="./">
+                                <img loading="lazy" src="img/telegramm.svg" alt="">
+                            </a>
+                            <a href="./">
+                                <img loading="lazy" src="img/watsapp.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="tel:79203659551">
+                            +7 (920) <span>365-95-51</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-consultation block-consultation2 block-green-cons">
+                <div class="container">
+                    <div class="block-consultation__content">
+                        <div class="block-consultation__body">
+                            <div class="block-consultation__center">
+                                <div class="block-consultation__title">
+                                    <img loading="lazy" src="img/icons/phone1.svg" alt="">
+                                    Оставьте заявку на звонок
+                                </div>
+                            </div>
+                            <a href="./" data-popup="#form3" class="btn bg-yellow">
+                                <span>Заказать звонок</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/reviews.njk' %}
+
+            {% include 'blocks/teams.njk' %}
+
+            {% include 'blocks/contacts.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b71f8801-d131-4c34-8869-00b3975108f5&amp;lang=ru_RU"></script>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Услуги</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-intro block-intro-blur block-intro-services">
+                <img src="img/banner5.webp" alt="" class="block-intro__banner">
+                <div class="container">
+                    <div class="block-intro__content">
+                        <div class="block-intro__heading-complex">
+                            <h1 class="title2">
+                                Радуга — спектр услуг <span>и индивидуальный подход к недвижимости</span>
+                            </h1>
+                            <p>
+                                Оставляйте заявку на звонок сейчас
+                            </p>
+                        </div>
+                        <form action="#" data-dev data-popup-message="#thanks1" class="form">
+                            <div class="form__inputs">
+                                <div class="form__input">
+                                    <input data-required autocomplete="off" type="text" name="form[]"
+                                        data-error="Обязательное поле" placeholder="Введите имя">
+                                </div>
+                                <div class="form__input">
+                                    <input data-required autocomplete="off" type="text" data-error="Обязательное поле"
+                                        name="form[]" placeholder="" class="telephone">
+                                    <div class="form__placeholder">
+                                        <span>+7</span> (999) 999-99-99
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__options">
+                                <div class="form__options-title">Способ связи</div>
+                                <div class="options">
+                                    <label class="options__item">
+                                        <input hidden class="options__input" checked type="radio" value="1"
+                                            name="option">
+                                        <span class="options__label">
+                                            <span class="options__icon"></span>
+                                            <span class="options__text">Telegram</span>
+                                        </span>
+                                    </label>
+                                    <label class="options__item">
+                                        <input hidden class="options__input" type="radio" value="2" name="option">
+                                        <span class="options__label">
+                                            <span class="options__icon"></span>
+                                            <span class="options__text">WhatsApp</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__buttons">
+                                <button type="submit" class="btn bg-yellow">
+                                    <span>Отправить</span>
+                                    <svg aria-hidden="true" width="10" height="18">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </button>
+                                <div class="form__text">
+                                    Нажимая на кнопку “Отправить” вы соглашаетесь с условиями <a href="./">политики
+                                        конфиденциальности</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-services2">
+                <div class="container">
+                    <div class="block-services2__content">
+                        <div class="block-services2__heading-complex">
+                            <h2 class="title2">
+                                <img loading="lazy" src="img/icons/icon9.svg" alt="">
+                                Поиск и подбор недвижимости
+                            </h2>
+                            <div class="block-services2__subtitle">
+                                Найдем лучшее жилье за короткий срок
+                            </div>
+                            <div class="block-services2__text">
+                                <p>
+                                    Система современного подбора недвижимости, которая сбережет воши нервы и деньги
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-services2__body">
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        Гарантия качества
+                                    </div>
+                                    <p>
+                                        Проводим оценку каждой выбранной вами квартиры с помощью лучших инструментов
+                                        аналитики и определяем ее реальную стоимость
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        ГАРАНТИЯ БЕЗОПАСНОЙ СДЕЛКИ
+                                    </div>
+                                    <p>
+                                        Качественно проверим продавца на предмет залога, арестов и задолженности по
+                                        квартире сделаем
+                                        детальный отчет о возможных рисках
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        ГАРАНТИЯ ПРАВИЛЬНОЙ ЦЕНЫ
+                                    </div>
+                                    <p>
+                                        Правильно организуем переговоры и поможем договорится о выгодной для вас цене,
+                                        сэкономив
+                                        при этом до 20% от начальной цены
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#" class="form2">
+                            <div class="form2__input">
+                                <input data-required autocomplete="off" type="text" name="form[]"
+                                    data-error="Обязательное поле" placeholder="Введите телефон" class="telephone"
+                                    inputmode="text">
+                            </div>
+                            <button type="submit" class="btn bg-light-violet">
+                                <span>Оставить заявку</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-services2 block-services2-green">
+                <div class="container">
+                    <div class="block-services2__content">
+                        <div class="block-services2__heading-complex">
+                            <h2 class="title2">
+                                <img loading="lazy" src="img/icons/icon10.svg" alt="">
+                                Продажа недвижимости
+                            </h2>
+                            <div class="block-services2__subtitle">
+                                Продадим квартиру дороже рынка
+                            </div>
+                            <div class="block-services2__text">
+                                <p>
+                                    Система управления продажей вашей квартиры. Оценка недвижимости, организация показов
+                                    с
+                                    регулярным отчетом
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-services2__body">
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#8dc124" />
+                                                <stop offset="100%" stop-color="#00813b" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#greenGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        Гарантия качества
+                                    </div>
+                                    <p>
+                                        Проводим оценку каждой выбранной вами квартиры с помощью лучших инструментов
+                                        аналитики и определяем ее реальную стоимость
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#8dc124" />
+                                                <stop offset="100%" stop-color="#00813b" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#greenGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        ГАРАНТИЯ БЕЗОПАСНОЙ СДЕЛКИ
+                                    </div>
+                                    <p>
+                                        Качественно проверим продавца на предмет залога, арестов и задолженности по
+                                        квартире сделаем
+                                        детальный отчет о возможных рисках
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#8dc124" />
+                                                <stop offset="100%" stop-color="#00813b" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#greenGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        ГАРАНТИЯ ПРАВИЛЬНОЙ ЦЕНЫ
+                                    </div>
+                                    <p>
+                                        Правильно организуем переговоры и поможем договорится о выгодной для вас цене,
+                                        сэкономив
+                                        при этом до 20% от начальной цены
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#" class="form2">
+                            <div class="form2__input">
+                                <input data-required autocomplete="off" type="text" name="form[]"
+                                    data-error="Обязательное поле" placeholder="Введите телефон" class="telephone"
+                                    inputmode="text">
+                            </div>
+                            <button type="submit" class="btn bg-green">
+                                <span>Оставить заявку</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-services2 block-services2-blue">
+                <div class="container">
+                    <div class="block-services2__content">
+                        <div class="block-services2__heading-complex">
+                            <h2 class="title2">
+                                <img loading="lazy" src="img/icons/icon11.svg" alt="">
+                                Ипотека
+                            </h2>
+                            <div class="block-services2__subtitle">
+                                Поможем оформить ипотеку под выгодный процент
+                            </div>
+                            <div class="block-services2__text">
+                                <p>
+                                    Мы готовы помочь вам оформить ипотеку на выгодных условиях
+                                </p>
+                                <p>
+                                    В нашей команде работают высококвалифицированные спе циалисты с богатым опытом в
+                                    сфере
+                                    ипотечного кредитования
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-services2__body">
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="blueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#89d7f8" />
+                                                <stop offset="100%" stop-color="#009dd8" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#blueGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        Гарантия качества
+                                    </div>
+                                    <p>
+                                        Проводим оценку каждой выбранной вами квартиры с помощью лучших инструментов
+                                        аналитики и определяем ее реальную стоимость
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="blueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#89d7f8" />
+                                                <stop offset="100%" stop-color="#009dd8" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#blueGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        ГАРАНТИЯ БЕЗОПАСНОЙ СДЕЛКИ
+                                    </div>
+                                    <p>
+                                        Качественно проверим продавца на предмет залога, арестов и задолженности по
+                                        квартире сделаем
+                                        детальный отчет о возможных рисках
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="blueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#89d7f8" />
+                                                <stop offset="100%" stop-color="#009dd8" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#blueGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        ГАРАНТИЯ ПРАВИЛЬНОЙ ЦЕНЫ
+                                    </div>
+                                    <p>
+                                        Правильно организуем переговоры и поможем договорится о выгодной для вас цене,
+                                        сэкономив
+                                        при этом до 20% от начальной цены
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#" class="form2">
+                            <div class="form2__input">
+                                <input data-required autocomplete="off" type="text" name="form[]"
+                                    data-error="Обязательное поле" placeholder="Введите телефон" class="telephone"
+                                    inputmode="text">
+                            </div>
+                            <button type="submit" class="btn bg-blue">
+                                <span>Оставить заявку</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-services2 block-services2-yellow">
+                <div class="container">
+                    <div class="block-services2__content">
+                        <div class="block-services2__heading-complex">
+                            <h2 class="title2">
+                                <img loading="lazy" src="img/icons/icon12.svg" alt="">
+                                Сопровождение сделок
+                            </h2>
+                            <div class="block-services2__subtitle">
+                                Безопасные сделки с недвижимостью
+                            </div>
+                            <div class="block-services2__text">
+                                <p>
+                                    Пре лагаем услуги по сопровождению безопасности сделок с недвижимостью с гарантией
+                                    юридической чистоты
+                                </p>
+                                <p>
+                                    Консультация опытного профессионального юриста и эк сперта в сфере управления
+                                    рисками.
+                                    Подготовка юридического заключения (отчета)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-services2__body">
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#fad500" />
+                                                <stop offset="100%" stop-color="#fa9100" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#orangeGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        УЧАСТИЕВ ПЕРЕГОворах
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#fad500" />
+                                                <stop offset="100%" stop-color="#fa9100" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#orangeGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        ПОДГОТоВКА КЛИЕНТА К БАНКОВСКИМ ОПЕРАЦИЯМ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#fad500" />
+                                                <stop offset="100%" stop-color="#fa9100" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#orangeGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        ПРИСУТСТВИЕ ПРИ ЗАКЛЮЧЕНИИ ДОГОВОРА
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-services2__column">
+                                <div class="block-services2__item">
+                                    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;"
+                                        aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#fad500" />
+                                                <stop offset="100%" stop-color="#fa9100" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#check1" fill="url(#orangeGradient)"></use>
+                                    </svg>
+                                    <div class="block-services2__title">
+                                        ПОМОЩЬ В РЕГИСТРАЦИИ ПРАВА СОБСТВЕННОСТИ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#" class="form2">
+                            <div class="form2__input">
+                                <input data-required autocomplete="off" type="text" name="form[]"
+                                    data-error="Обязательное поле" placeholder="Введите телефон" class="telephone"
+                                    inputmode="text">
+                            </div>
+                            <button type="submit" class="btn bg-yellow">
+                                <span>Оставить заявку</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-about block-about-services">
+                <div class="container">
+                    <div class="block-about__content">
+                        <div class="block-about__body">
+                            <div class="block-about__column column-bg bg-green">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon1.svg" alt="">
+                                </div>
+                                <span>продажа недвижмости</span>
+                            </div>
+                            <div class="block-about__column">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon2.svg" alt="">
+                                </div>
+                                <span>Оценка недвижмости</span>
+                            </div>
+                            <div class="block-about__column column-bg bg-yellow">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon3.svg" alt="">
+                                </div>
+                                <span>Безопасная сделка</span>
+                            </div>
+                            <div class="block-about__column">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon4.svg" alt="">
+                                </div>
+                                <span>Огромная<br> база объектов</span>
+                            </div>
+                            <div class="block-about__column column-bg bg-blue">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon5.svg" alt="">
+                                </div>
+                                <span>Юридическая экспертиза</span>
+                            </div>
+                            <div class="block-about__column">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon6.svg" alt="">
+                                </div>
+                                <span>Сопровождение сделок</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-consultation">
+                <div class="container">
+                    <div class="block-consultation__content">
+                        <img loading="lazy" src="img/image4.webp" alt="" class="block-consultation__pic1">
+                        <div class="block-consultation__body">
+                            <div class="block-consultation__center">
+                                <div class="block-consultation__title">Бесплатная консультация</div>
+                                <p>
+                                    Сообщите нам, что именно вы ищете, и мы
+                                    подберем для вас наилучшие варианты
+                                </p>
+                            </div>
+                            <a href="./" data-popup="#form1" class="btn bg-yellow">
+                                <span>Заказать</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/reviews.njk' %}
+
+            <div class="block-consultation block-consultation2 block-violet-cons">
+                <div class="container">
+                    <div class="block-consultation__content">
+                        <div class="block-consultation__body">
+                            <div class="block-consultation__center">
+                                <div class="block-consultation__title">
+                                    <svg aria-hidden="true" width="40" height="40">
+                                        <use xlink:href="img/sprite.svg#questions"></use>
+                                    </svg>
+                                    Нужна помощь в подборе квартиры?
+                                </div>
+                            </div>
+                            <a href="./" data-popup="#form2" class="btn bg-yellow">
+                                <span>Написать нам</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-hot-offers block-hot-offers2">
+                <div class="container">
+                    <img loading="lazy" src="img/icons/line6.svg" alt="" class="block-hot-offers__line1">
+                    <img loading="lazy" src="img/icons/line7.svg" alt="" class="block-hot-offers__line2">
+                    <div class="block-hot-offers__content">
+                        <h2 class="title2">Самые горячие предложения</h2>
+                        <div class="block-hot-offers__body">
+                            <div class="block-hot-offers__left product-card-info">
+                                <div class="product-card-info__title">ЖК «Голос Меридиана»</div>
+                                <div class="product-card-info__locations">
+                                    <div class="product-card-info__location">
+                                        <svg aria-hidden="true" width="12" height="14">
+                                            <use xlink:href="img/sprite.svg#location"></use>
+                                        </svg>
+                                        <span>Иваново</span>
+                                    </div>
+                                    <a href="./" class="btn bg-blue">
+                                        <span>На карте</span>
+                                    </a>
+                                </div>
+                                <div class="product-card-info__text">
+                                    <p>
+                                        Там, где роскошная жизнь
+                                        достигает новых высот
+                                    </p>
+                                    <p>
+                                        Расположенное в самом сердце
+                                        города, среди пышной зелени и
+                                        живописных видов на
+                                        Центральный парк
+                                    </p>
+                                </div>
+                                <div class="product-card-info__info">
+                                    <div class="product-card-info__price">
+                                        <svg aria-hidden="true" width="26" height="26">
+                                            <use xlink:href="img/sprite.svg#money"></use>
+                                        </svg>
+                                        <span>3.750.000</span>
+                                        <svg aria-hidden="true" width="24" height="26">
+                                            <use xlink:href="img/sprite.svg#ruble"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-card-info__square">
+                                        <svg aria-hidden="true" width="25" height="25">
+                                            <use xlink:href="img/sprite.svg#m2"></use>
+                                        </svg>
+                                        <span>47 кв.м</span>
+                                    </div>
+                                </div>
+                                <a href="./" class="btn bg-green">
+                                    <span>Подробнее</span>
+                                    <svg aria-hidden="true" width="10" height="18">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="block-hot-offers__right">
+                                <a data-fancybox="gallery1" href="img/image5.webp">
+                                    <img loading="lazy" src="img/image5.webp" alt="">
+                                </a>
+                                <a data-fancybox="gallery1" href="img/image6.webp">
+                                    <img loading="lazy" src="img/image6.webp" alt="">
+                                </a>
+                                <a data-fancybox="gallery1" href="img/image7.webp">
+                                    <img loading="lazy" src="img/image7.webp" alt="">
+                                </a>
+                                <a data-fancybox="gallery1" href="img/image6.webp">
+                                    <img loading="lazy" src="img/image6.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/contacts.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

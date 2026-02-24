@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Каталог</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-intro">
+                <img src="img/banner2.webp" alt="" class="block-intro__banner">
+                <div class="container">
+                    <div class="block-intro__content">
+                        <div class="block-intro__heading-complex">
+                            <h1 class="title1">
+                                Эксклюзивные предложения
+                            </h1>
+                            <p>
+                                по ценам на <span>10-25%</span> ниже рынка, которых нет на Avito и Циан
+                            </p>
+                        </div>
+                        <div class="documents-block-intro">
+                            <img loading="lazy" src="img/image18.webp" alt="">
+                            <div class="documents-block-intro__titles">
+                                <div class="documents-block-intro__title">Документы проверены</div>
+                                <p>
+                                    В каталоге только надежные объекты, прошедшие юридическую экспертизу
+                                </p>
+                            </div>
+                        </div>
+                        <a href="./" class="btn bg-blue">
+                            <span>Получить каталог</span>
+                            <svg aria-hidden="true" width="10" height="18">
+                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-filter2">
+                <div class="container">
+                    <img loading="lazy" src="img/line/line1.svg" alt="" class="block-filter2__line1 line1 line">
+                    <img loading="lazy" src="img/line/line4.svg" alt="" class="block-filter2__line2 line2 line">
+                    <img loading="lazy" src="img/line/line5.svg" alt="" class="block-filter2__line3 line3 line">
+                    <div data-tabs="480, max" class="tabs-filter">
+                        <nav data-tabs-titles class="tabs-filter__navigation">
+                            <button type="button" class="tabs-filter__title bg-pink _tab-active">
+                                <span>Вторичка</span>
+                            </button>
+                            <button type="button" class="tabs-filter__title bg-yellow">
+                                <span>Новостройки</span>
+                            </button>
+                            <button type="button" class="tabs-filter__title bg-green">
+                                <span>Коммерческая</span>
+                            </button>
+                            <button type="button" class="tabs-filter__title bg-blue">
+                                <span>Дома, коттеджи, таунхаусы</span>
+                            </button>
+                            <button type="button" class="tabs-filter__title bg-violet">
+                                <span>Участки</span>
+                            </button>
+                            <button type="button" class="tabs-filter__title bg-light-violet">
+                                <span>Гаражи</span>
+                            </button>
+                        </nav>
+                        <div data-tabs-body class="tabs-filter__content">
+                            <div class="tabs-filter__body">
+                                <form action="#" class="search-filter2">
+                                    <div class="search-filter2__content">
+                                        <div class="search-filter2__body">
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Срок сдачи ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите дату:"
+                                                        selected>Введите дату
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Количество комнат</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label
+                                                        data-label="Выберите количество комнат:" selected>Выберите
+                                                        количество комнат
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Название ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите название:"
+                                                        selected>Введите название
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Стоимость, (₽)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="100 000 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Площадь, (м2)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="1 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Фильтры</div>
+                                                <div class="search-filter__column">
+                                                    <div class="search-filter__titles">
+                                                        <div class="search-filter__title">Все фильтры</div>
+                                                        <div class="arrow1">
+                                                            <svg aria-hidden="true" width="20" height="18">
+                                                                <use xlink:href="img/sprite.svg#filter"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-filter__dropdowm">
+                                                        <div class="search-filter__scroll">
+                                                            <div class="options">
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="1" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ИЖС</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="2" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">СНТ</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="3" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ДНП</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="4" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">Промзначения</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-filter2__buttons">
+                                            <a href="./" class="btn bg-blue">
+                                                <span>На карте</span>
+                                            </a>
+                                            <button type="submit" class="btn bg-green">
+                                                <span>Показать</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tabs-filter__body">
+                                <form action="#" class="search-filter2 search-filter2-yellow">
+                                    <div class="search-filter2__content">
+                                        <div class="search-filter2__body">
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Срок сдачи ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите дату:"
+                                                        selected>Введите дату
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Количество комнат</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label
+                                                        data-label="Выберите количество комнат:" selected>Выберите
+                                                        количество комнат
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Название ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите название:"
+                                                        selected>Введите название
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Стоимость, (₽)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="100 000 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Площадь, (м2)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="1 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Фильтры</div>
+                                                <div class="search-filter__column">
+                                                    <div class="search-filter__titles">
+                                                        <div class="search-filter__title">Все фильтры</div>
+                                                        <div class="arrow1">
+                                                            <svg aria-hidden="true" width="20" height="18">
+                                                                <use xlink:href="img/sprite.svg#filter"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-filter__dropdowm">
+                                                        <div class="search-filter__scroll">
+                                                            <div class="options">
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="1" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ИЖС</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="2" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">СНТ</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="3" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ДНП</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="4" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">Промзначения</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-filter2__buttons">
+                                            <a href="./" class="btn bg-blue">
+                                                <span>На карте</span>
+                                            </a>
+                                            <button type="submit" class="btn bg-green">
+                                                <span>Показать</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tabs-filter__body">
+                                <form action="#" class="search-filter2 search-filter2-green">
+                                    <div class="search-filter2__content">
+                                        <div class="search-filter2__body">
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Срок сдачи ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите дату:"
+                                                        selected>Введите дату
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Количество комнат</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label
+                                                        data-label="Выберите количество комнат:" selected>Выберите
+                                                        количество комнат
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Название ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите название:"
+                                                        selected>Введите название
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Стоимость, (₽)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="100 000 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Площадь, (м2)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="1 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Фильтры</div>
+                                                <div class="search-filter__column">
+                                                    <div class="search-filter__titles">
+                                                        <div class="search-filter__title">Все фильтры</div>
+                                                        <div class="arrow1">
+                                                            <svg aria-hidden="true" width="20" height="18">
+                                                                <use xlink:href="img/sprite.svg#filter"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-filter__dropdowm">
+                                                        <div class="search-filter__scroll">
+                                                            <div class="options">
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="1" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ИЖС</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="2" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">СНТ</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="3" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ДНП</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="4" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">Промзначения</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-filter2__buttons">
+                                            <a href="./" class="btn bg-blue">
+                                                <span>На карте</span>
+                                            </a>
+                                            <button type="submit" class="btn bg-green">
+                                                <span>Показать</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tabs-filter__body">
+                                <form action="#" class="search-filter2 search-filter2-blue">
+                                    <div class="search-filter2__content">
+                                        <div class="search-filter2__body">
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Срок сдачи ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите дату:"
+                                                        selected>Введите дату
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Количество комнат</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label
+                                                        data-label="Выберите количество комнат:" selected>Выберите
+                                                        количество комнат
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Название ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите название:"
+                                                        selected>Введите название
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Стоимость, (₽)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="100 000 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Площадь, (м2)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="1 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Фильтры</div>
+                                                <div class="search-filter__column">
+                                                    <div class="search-filter__titles">
+                                                        <div class="search-filter__title">Все фильтры</div>
+                                                        <div class="arrow1">
+                                                            <svg aria-hidden="true" width="20" height="18">
+                                                                <use xlink:href="img/sprite.svg#filter"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-filter__dropdowm">
+                                                        <div class="search-filter__scroll">
+                                                            <div class="options">
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="1" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ИЖС</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="2" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">СНТ</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="3" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ДНП</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="4" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">Промзначения</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-filter2__buttons">
+                                            <a href="./" class="btn bg-blue">
+                                                <span>На карте</span>
+                                            </a>
+                                            <button type="submit" class="btn bg-green">
+                                                <span>Показать</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tabs-filter__body">
+                                <form action="#" class="search-filter2 search-filter2-violet">
+                                    <div class="search-filter2__content">
+                                        <div class="search-filter2__body">
+                                            <img loading="lazy" src="img/image19.webp" alt=""
+                                                class="search-filter2__pic1">
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Срок сдачи ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите дату:"
+                                                        selected>Введите дату
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column column-none">
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Название ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите название:"
+                                                        selected>Введите название
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column column-none">
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Площадь, (м2)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="1 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Фильтры</div>
+                                                <div class="search-filter__column">
+                                                    <div class="search-filter__titles">
+                                                        <div class="search-filter__title">Все фильтры</div>
+                                                        <div class="arrow1">
+                                                            <svg aria-hidden="true" width="20" height="18">
+                                                                <use xlink:href="img/sprite.svg#filter"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-filter__dropdowm">
+                                                        <div class="search-filter__scroll">
+                                                            <div class="options">
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="1" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ИЖС</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden="" class="options__input" type="radio"
+                                                                        value="2" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">СНТ</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="3" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">ДНП</span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="options__item">
+                                                                    <input hidden class="options__input" type="radio"
+                                                                        value="4" name="option">
+                                                                    <span class="options__label">
+                                                                        <span class="options__icon"></span>
+                                                                        <span class="options__text">Промзначения</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-filter2__buttons">
+                                            <a href="./" class="btn bg-blue">
+                                                <span>На карте</span>
+                                            </a>
+                                            <button type="submit" class="btn bg-green">
+                                                <span>Показать</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tabs-filter__body">
+                                <form action="#" class="search-filter2 search-filter2-light-violet">
+                                    <div class="search-filter2__content">
+                                        <div class="search-filter2__body">
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Срок сдачи ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите дату:"
+                                                        selected>Введите дату
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Количество комнат</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label
+                                                        data-label="Выберите количество комнат:" selected>Выберите
+                                                        количество комнат
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Название ЖК</div>
+                                                <select name="form[]" class="select1">
+                                                    <option value="" data-show data-label data-label="Введите название:"
+                                                        selected>Введите название
+                                                    </option>
+                                                    <option value="1">Пункт №1</option>
+                                                    <option value="2">Пункт №2</option>
+                                                    <option value="3">Пункт №3</option>
+                                                    <option value="4">Пункт №4</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Стоимость, (₽)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="100 000 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-filter2__column">
+                                                <div class="search-filter2__label">Площадь, (м2)</div>
+                                                <div class="inputs">
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="0">
+                                                    </div>
+                                                    <div class="inputs__input">
+                                                        <input
+                                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                            data-required="" autocomplete="off" type="text"
+                                                            name="form[]" data-error="Обязательное поле"
+                                                            placeholder="1 000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-filter2__buttons">
+                                            <a href="./" class="btn bg-blue">
+                                                <span>На карте</span>
+                                            </a>
+                                            <button type="submit" class="btn bg-green">
+                                                <span>Показать</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-great-deals block-great-deals1">
+                <div class="container">
+                    <div class="block-great-deals__content">
+                        <h2 class="title2">
+                            Самые выгодные предложения<br> <span>для покупки жилья в новостройках</span>
+                        </h2>
+                        <div class="block-great-deals__body">
+                            <div class="block-great-deals__slider swiper">
+                                <div class="block-great-deals__wrapper swiper-wrapper">
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image15.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Однокомнатная квартира в
+                                                ЖК «Голос Меридиана»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>5.000.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>54 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image16.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Двухквартира в ЖК
+                                                «Башни Свободы»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>2.900.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>39 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image17.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Трехкомнатная квартира в
+                                                ЖК «Александровский»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>22.750.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>63 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image15.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Однокомнатная квартира в
+                                                ЖК «Голос Меридиана»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>5.000.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>54 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image16.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Двухквартира в ЖК
+                                                «Башни Свободы»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>2.900.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>39 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <div class="block-great-deals__arrow-prev arrow-prev">
+                                    <svg aria-hidden="true" width="14" height="26">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </div>
+                                <div class="block-great-deals__arrow-next arrow-next">
+                                    <svg aria-hidden="true" width="14" height="26">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-great-deals block-great-deals2">
+                <div class="container">
+                    <div class="block-great-deals__content">
+                        <h2 class="title2">
+                            Самые выгодные предложения<br> <span>для покупки жилья на вторичном рынке</span>
+                        </h2>
+                        <div class="block-great-deals__body">
+                            <div class="block-great-deals__slider swiper">
+                                <div class="block-great-deals__wrapper swiper-wrapper">
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image12.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Однокомнатная квартира в
+                                                ЖК «Голос Меридиана»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>3.750.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>47 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image13.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Студия квартира в ЖК
+                                                «Башни Свободы»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>2.300.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>28 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image14.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Однокомнатная квартира в
+                                                ЖК «Александровский»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>6.200.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>63 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image12.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Однокомнатная квартира в
+                                                ЖК «Голос Меридиана»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>3.750.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>47 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-great-deals__slide swiper-slide">
+                                        <div class="block-great-deals__image">
+                                            <img loading="lazy" src="img/image13.webp" alt="">
+                                        </div>
+                                        <div class="block-great-deals__item">
+                                            <div class="block-great-deals__title">
+                                                Студия квартира в ЖК
+                                                «Башни Свободы»
+                                            </div>
+                                            <div class="block-great-deals__location">
+                                                <svg aria-hidden="true" width="15" height="18">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <span>Район:</span>
+                                                Центральный
+                                            </div>
+                                            <div class="product-card-info__info">
+                                                <div class="product-card-info__price">
+                                                    <svg aria-hidden="true" width="26" height="26">
+                                                        <use xlink:href="img/sprite.svg#money"></use>
+                                                    </svg>
+                                                    <span>2.300.000</span>
+                                                    <svg aria-hidden="true" width="24" height="26">
+                                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="product-card-info__square">
+                                                    <svg aria-hidden="true" width="25" height="25">
+                                                        <use xlink:href="img/sprite.svg#m2"></use>
+                                                    </svg>
+                                                    <span>28 кв.м</span>
+                                                </div>
+                                            </div>
+                                            <a href="./" class="btn bg-green">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true" width="10" height="18">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <div class="block-great-deals__arrow-prev arrow-prev">
+                                    <svg aria-hidden="true" width="14" height="26">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </div>
+                                <div class="block-great-deals__arrow-next arrow-next">
+                                    <svg aria-hidden="true" width="14" height="26">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-consultation">
+                <div class="container">
+                    <div class="block-consultation__content">
+                        <img loading="lazy" src="img/image4.webp" alt="" class="block-consultation__pic1">
+                        <div class="block-consultation__body">
+                            <div class="block-consultation__center">
+                                <div class="block-consultation__title">Бесплатная консультация</div>
+                                <p>
+                                    Сообщите нам, что именно вы ищете, и мы
+                                    подберем для вас наилучшие варианты
+                                </p>
+                            </div>
+                            <a href="./" data-popup="#form1" class="btn bg-yellow">
+                                <span>Заказать</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-map1">
+                <div id="map1" class="map"></div>
+                <div class="container">
+                    <div class="block-map1__content">
+                        <h2 class="title2">Новые объекты</h2>
+                        <div class="block-map1__body">
+                            <div class="block-map1__card">
+                                <div class="block-map1__image">
+                                    <img loading="lazy" src="img/image12.webp" alt="">
+                                    <div class="product-card-info__price">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                            <use xlink:href="img/sprite.svg#money"></use>
+                                        </svg>
+                                        <span>3.750.000</span>
+                                        <svg aria-hidden="true" width="14" height="15">
+                                            <use xlink:href="img/sprite.svg#ruble"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block-map1__item">
+                                    <a href="./" class="product-card-info__title">
+                                        Однокомнатная квартира в
+                                        ЖК «Голос Меридиана»
+                                    </a>
+                                    <div class="product-card-info__location">
+                                        <svg aria-hidden="true" width="15" height="18">
+                                            <use xlink:href="img/sprite.svg#location"></use>
+                                        </svg>
+                                        <span>г. Иваново, ул. пр. Ленина, 88</span>
+                                    </div>
+                                    <div class="product-card-info__info">
+                                        <div class="product-card-info__square">
+                                            <svg aria-hidden="true" width="25" height="25">
+                                                <use xlink:href="img/sprite.svg#m2"></use>
+                                            </svg>
+                                            <span>47 кв.м</span>
+                                        </div>
+                                        <div class="product-card-info__square">
+                                            <svg aria-hidden="true" width="19" height="19">
+                                                <use xlink:href="img/sprite.svg#room"></use>
+                                            </svg>
+                                            <span>1 комната</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-info__links">
+                                        <a href="./" class="link">
+                                            <span>Рассчитать ипотеку</span>
+                                            <svg aria-hidden="true" width="8" height="14">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="./" class="link map-link" data-lat="55.694843" data-lng="37.435023">
+                                            <span>Смотреть на карте</span>
+                                            <svg aria-hidden="true" width="8" height="14">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-map1__card">
+                                <div class="block-map1__image">
+                                    <img loading="lazy" src="img/image13.webp" alt="">
+                                    <div class="product-card-info__price">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                            <use xlink:href="img/sprite.svg#money"></use>
+                                        </svg>
+                                        <span>2.650.000</span>
+                                        <svg aria-hidden="true" width="14" height="15">
+                                            <use xlink:href="img/sprite.svg#ruble"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block-map1__item">
+                                    <a href="./" class="product-card-info__title">
+                                        Однокомнатная квартира в
+                                        ЖК «Голос Меридиана»
+                                    </a>
+                                    <div class="product-card-info__location">
+                                        <svg aria-hidden="true" width="15" height="18">
+                                            <use xlink:href="img/sprite.svg#location"></use>
+                                        </svg>
+                                        <span>г. Иваново, ул. пр. Ленина, 88</span>
+                                    </div>
+                                    <div class="product-card-info__info">
+                                        <div class="product-card-info__square">
+                                            <svg aria-hidden="true" width="25" height="25">
+                                                <use xlink:href="img/sprite.svg#m2"></use>
+                                            </svg>
+                                            <span>47 кв.м</span>
+                                        </div>
+                                        <div class="product-card-info__square">
+                                            <svg aria-hidden="true" width="19" height="19">
+                                                <use xlink:href="img/sprite.svg#room"></use>
+                                            </svg>
+                                            <span>1 комната</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-info__links">
+                                        <a href="./" class="link">
+                                            <span>Рассчитать ипотеку</span>
+                                            <svg aria-hidden="true" width="8" height="14">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="./" class="link map-link" data-lat="55.831903" data-lng="37.411961">
+                                            <span>Смотреть на карте</span>
+                                            <svg aria-hidden="true" width="8" height="14">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-map1__card">
+                                <div class="block-map1__image">
+                                    <img loading="lazy" src="img/image14.webp" alt="">
+                                    <div class="product-card-info__price">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                            <use xlink:href="img/sprite.svg#money"></use>
+                                        </svg>
+                                        <span>6.200.000</span>
+                                        <svg aria-hidden="true" width="14" height="15">
+                                            <use xlink:href="img/sprite.svg#ruble"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block-map1__item">
+                                    <a href="./" class="product-card-info__title">
+                                        Однокомнатная квартира в
+                                        ЖК «Голос Меридиана»
+                                    </a>
+                                    <div class="product-card-info__location">
+                                        <svg aria-hidden="true" width="15" height="18">
+                                            <use xlink:href="img/sprite.svg#location"></use>
+                                        </svg>
+                                        <span>г. Иваново, ул. пр. Ленина, 88</span>
+                                    </div>
+                                    <div class="product-card-info__info">
+                                        <div class="product-card-info__square">
+                                            <svg aria-hidden="true" width="25" height="25">
+                                                <use xlink:href="img/sprite.svg#m2"></use>
+                                            </svg>
+                                            <span>47 кв.м</span>
+                                        </div>
+                                        <div class="product-card-info__square">
+                                            <svg aria-hidden="true" width="19" height="19">
+                                                <use xlink:href="img/sprite.svg#room"></use>
+                                            </svg>
+                                            <span>1 комната</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-info__links">
+                                        <a href="./" class="link">
+                                            <span>Рассчитать ипотеку</span>
+                                            <svg aria-hidden="true" width="8" height="14">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="./" class="link map-link" data-lat="55.763338" data-lng="37.565466">
+                                            <span>Смотреть на карте</span>
+                                            <svg aria-hidden="true" width="8" height="14">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-map1__card">
+                                <div class="block-map1__image">
+                                    <img loading="lazy" src="img/image15.webp" alt="">
+                                    <div class="product-card-info__price">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                            <use xlink:href="img/sprite.svg#money"></use>
+                                        </svg>
+                                        <span>22.750.000</span>
+                                        <svg aria-hidden="true" width="14" height="15">
+                                            <use xlink:href="img/sprite.svg#ruble"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block-map1__item">
+                                    <a href="./" class="product-card-info__title">
+                                        Однокомнатная квартира в
+                                        ЖК «Голос Меридиана»
+                                    </a>
+                                    <div class="product-card-info__location">
+                                        <svg aria-hidden="true" width="15" height="18">
+                                            <use xlink:href="img/sprite.svg#location"></use>
+                                        </svg>
+                                        <span>г. Иваново, ул. пр. Ленина, 88</span>
+                                    </div>
+                                    <div class="product-card-info__info">
+                                        <div class="product-card-info__square">
+                                            <svg aria-hidden="true" width="25" height="25">
+                                                <use xlink:href="img/sprite.svg#m2"></use>
+                                            </svg>
+                                            <span>47 кв.м</span>
+                                        </div>
+                                        <div class="product-card-info__square">
+                                            <svg aria-hidden="true" width="19" height="19">
+                                                <use xlink:href="img/sprite.svg#room"></use>
+                                            </svg>
+                                            <span>1 комната</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-info__links">
+                                        <a href="./" class="link">
+                                            <span>Рассчитать ипотеку</span>
+                                            <svg aria-hidden="true" width="8" height="14">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="./" class="link map-link" data-lat="55.744522" data-lng="37.616378">
+                                            <span>Смотреть на карте</span>
+                                            <svg aria-hidden="true" width="8" height="14">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-consultation block-consultation2 block-green-cons">
+                <div class="container">
+                    <div class="block-consultation__content">
+                        <div class="block-consultation__body">
+                            <div class="block-consultation__center">
+                                <div class="block-consultation__title">
+                                    <img loading="lazy" src="img/icons/phone1.svg" alt="">
+                                    Оставьте заявку на звонок
+                                </div>
+                            </div>
+                            <a href="./" data-popup="#form3" class="btn bg-yellow">
+                                <span>Заказать звонок</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-about">
+                <div class="container">
+                    <div class="block-about__content">
+                        <h2 class="title2">
+                            <span>Радуга —</span> спектр услуг<br> и
+                            индивидуальный подход к недвижимости
+                        </h2>
+                        <div class="block-about__body">
+                            <div class="block-about__column column-bg bg-green">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon1.svg" alt="">
+                                </div>
+                                <span>продажа недвижмости</span>
+                            </div>
+                            <div class="block-about__column">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon2.svg" alt="">
+                                </div>
+                                <span>Оценка недвижмости</span>
+                            </div>
+                            <div class="block-about__column column-bg bg-yellow">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon3.svg" alt="">
+                                </div>
+                                <span>Безопасная сделка</span>
+                            </div>
+                            <div class="block-about__column">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon4.svg" alt="">
+                                </div>
+                                <span>Огромная<br> база объектов</span>
+                            </div>
+                            <div class="block-about__column column-bg bg-blue">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon5.svg" alt="">
+                                </div>
+                                <span>Юридическая экспертиза</span>
+                            </div>
+                            <div class="block-about__column">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon6.svg" alt="">
+                                </div>
+                                <span>Сопровождение сделок</span>
+                            </div>
+                            <div class="block-about__column column-bg bg-light-violet">
+                                <div class="block-about__icon">
+                                    <img loading="lazy" src="img/icons/icon7.svg" alt="">
+                                </div>
+                                <span>Поиск и подбор<br> недвижимости</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-search">
+                <div class="container">
+                    <img loading="lazy" src="img/line/line1.svg" alt="" class="block-search__line1 line1 line">
+                    <img loading="lazy" src="img/line/line2.svg" alt="" class="block-search__line2 line">
+                    <img loading="lazy" src="img/line/line3.svg" alt="" class="block-search__line3 line">
+                    <div class="block-search__content">
+                        <h2 class="title2">Быстрый поиск</h2>
+                        <div class="block-search__body">
+                            <a href="./" class="block-search__column">
+                                <img loading="lazy" src="img/image1.webp" alt="" class="block-search__pic1">
+                                <div class="block-search__item">
+                                    <div class="block-search__title">С евро ремонтом</div>
+                                    <div class="block-search__arrow">
+                                        <svg aria-hidden="true" width="8" height="14">
+                                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./" class="block-search__column">
+                                <img loading="lazy" src="img/image2.webp" alt="" class="block-search__pic1">
+                                <div class="block-search__item">
+                                    <div class="block-search__title">В новом доме</div>
+                                    <div class="block-search__arrow">
+                                        <svg aria-hidden="true" width="8" height="14">
+                                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./" class="block-search__column">
+                                <img loading="lazy" src="img/image3.webp" alt="" class="block-search__pic1">
+                                <div class="block-search__item">
+                                    <div class="block-search__title">С большой кухней</div>
+                                    <div class="block-search__arrow">
+                                        <svg aria-hidden="true" width="8" height="14">
+                                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/reviews.njk' %}
+
+            <div class="block-consultation block-consultation2 block-green-cons">
+                <div class="container">
+                    <div class="block-consultation__content">
+                        <div class="block-consultation__body">
+                            <div class="block-consultation__center">
+                                <div class="block-consultation__title">
+                                    <img loading="lazy" src="img/icons/phone1.svg" alt="">
+                                    Оставьте заявку на звонок
+                                </div>
+                            </div>
+                            <a href="./" data-popup="#form3" class="btn bg-yellow">
+                                <span>Заказать звонок</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/contacts.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b71f8801-d131-4c34-8869-00b3975108f5&amp;lang=ru_RU"></script>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

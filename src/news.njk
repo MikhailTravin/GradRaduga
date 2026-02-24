@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Новости</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        <header class="header header-white">
+            <div class="container">
+                <div class="header__content">
+                    <a href="./" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="header__right">
+                        <div data-da=".header__body, 768, last" class="header__location">
+                            <svg aria-hidden="true" width="12" height="14">
+                                <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                            <span>Иваново</span>
+                        </div>
+                        <nav class="header__body">
+                            <ul>
+                                <li>
+                                    <a href="./">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="./">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="./">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="./">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="./">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__contacts">
+                            <div class="header__icons">
+                                <img src="img/viber.svg" alt="">
+                                <img src="img/telegramm.svg" alt="">
+                                <img src="img/watsapp.svg" alt="">
+                            </div>
+                            <a href="tel:79203659551">+7 (920) <span>365-95-51</span></a>
+                        </div>
+                        <button type="button" class="icon-menu"><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+
+            <div class="block-intro block-intro-news">
+                <div class="container">
+                    <img loading="lazy" src="img/line/line1.svg" alt="" class="block-intro__line1 line1 line">
+                    <img loading="lazy" src="img/line/line4.svg" alt="" class="block-intro__line2 line2 line">
+                    <img loading="lazy" src="img/line/line5.svg" alt="" class="block-intro__line3 line3 line">
+                    <div class="block-intro__content">
+                        <div class="block-intro__heading-complex">
+                            <h1 class="title1">
+                                <span>Главные новости и важная информация</span> агенства недвижимости Радуга
+                            </h1>
+                            <p>
+                                Подпишитесь на нас в социальных сетях, чтобы быть в курсе всех событий
+                            </p>
+                        </div>
+                        <div class="socials-block-intro">
+                            <a href="./">
+                                <img src="img/vk.webp" alt="">
+                                <div class="socials-block-intro__titles">
+                                    <div class="socials-block-intro__title">Мы во Вконтакте</div>
+                                    <p>
+                                        Нажмите на значек, чтобы перейти по ссылке
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="./">
+                                <img src="img/tg.webp" alt="">
+                                <div class="socials-block-intro__titles">
+                                    <div class="socials-block-intro__title">Мы в Telegram</div>
+                                    <p>
+                                        Нажмите на значек, чтобы перейти по ссылке
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-news">
+                <div class="container">
+                    <img loading="lazy" src="img/line/line11.svg" alt="" class="block-news__line1 line">
+                    <img loading="lazy" src="img/line/line12.svg" alt="" class="block-news__line2 line">
+                    <img loading="lazy" src="img/line/line13.svg" alt="" class="block-news__line3 line">
+                    <div class="block-news__content">
+                        <div data-showmore="items" class="block-news__showmore">
+                            <div data-showmore-content="2" class="block-news__body">
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image1.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">11.09.2024</div>
+                                        <div class="block-news__title">
+                                            Как выбрать застройщика при покупке жилья
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image2.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">11.09.2024</div>
+                                        <div class="block-news__title">
+                                            Из чего складывается стоимость квартиры
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image3.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">11.09.2024</div>
+                                        <div class="block-news__title">
+                                            Современные панельные дома: плюсы и минусы
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image4.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">11.09.2024</div>
+                                        <div class="block-news__title">
+                                            Как выбрать застройщика при покупке жилья
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image3.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">11.09.2024</div>
+                                        <div class="block-news__title">
+                                            Современные панельные дома: плюсы и минусы
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image4.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">11.09.2024</div>
+                                        <div class="block-news__title">
+                                            Как выбрать застройщика при покупке жилья
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <button hidden data-showmore-button type="button" class="block-news__more btn bg-green">
+                                <span class="span1">Показать еще</span>
+                                <span class="span2">Скрыть</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-work">
+                <div class="container">
+                    <img loading="lazy" src="img/line/line14.svg" alt="" class="block-work__line1 line">
+                    <img loading="lazy" src="img/line/line15.svg" alt="" class="block-work__line2 line">
+                    <div class="block-work__content">
+                        <div class="block-work__heading">
+                            <h2 class="title2">Работа в Радуга</h2>
+                            <p>
+                                Находитесь в поиске достойного места работы?
+                                Хотите построить карьеру в современной, динамично
+                                развивающейся компании?<br>
+                                Мы будем рады знакомству с вами.
+                            </p>
+                        </div>
+                        <form action="#" class="form2">
+                            <div class="form2__input">
+                                <input data-required autocomplete="off" type="text" name="form[]"
+                                    data-error="Обязательное поле" placeholder="Введите телефон" class="telephone">
+                            </div>
+                            <button type="submit" class="btn bg-light-violet">
+                                <span>Оставить заявку</span>
+                                <svg aria-hidden="true" width="10" height="18">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-announcements">
+                <div class="container">
+                    <div class="block-announcements__content">
+                        <h2 class="title2">
+                            Важные объявления
+                        </h2>
+                        <div class="block-announcements__body">
+                            <a href="./" class="block-announcements__column">
+                                <div class="block-announcements__image">
+                                    <img loading="lazy" src="img/image20.webp" alt="">
+                                </div>
+                                <div class="btn bg-blue">
+                                    <span>Важные изменения в работе Радуга</span>
+                                </div>
+                            </a>
+                            <a href="./" class="block-announcements__column">
+                                <div class="block-announcements__image">
+                                    <img loading="lazy" src="img/image21.webp" alt="">
+                                </div>
+                                <div class="btn bg-yellow">
+                                    <span>График работы в новогодние праздники</span>
+                                </div>
+                            </a>
+                            <a href="./" class="block-announcements__column">
+                                <div class="block-announcements__image">
+                                    <img loading="lazy" src="img/image22.webp" alt="">
+                                </div>
+                                <div class="btn bg-green">
+                                    <span>Срочно требуется СММ специалист в компанию</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-news block-articles">
+                <div class="container">
+                    <img loading="lazy" src="img/line/line16.svg" alt="" class="block-news__line4 line">
+                    <img loading="lazy" src="img/line/line17.svg" alt="" class="block-news__line5 line">
+                    <img loading="lazy" src="img/line/line18.svg" alt="" class="block-news__line6 line">
+                    <div class="block-news__content">
+                        <h2 class="title2">Статьи о важном</h2>
+                        <div class="block-news__showmore">
+                            <div class="block-news__body">
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image5.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">23.12.2024</div>
+                                        <div class="block-news__title">
+                                            Рынок новостроек: чем запомнился 2024 год,
+                                            и каким будет 2025-й прогноз
+                                        </div>
+                                        <p>
+                                            Специалисты направления «Новостройки» и Аналитического центра
+                                            ИНКОМ-Недвижимость выявили наиболее значимые тенденции массового первичного
+                                            рынка в 2024 году и сдел ...
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image6.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">23.12.2024</div>
+                                        <div class="block-news__title">
+                                            На рынке аренды спрос снизился на 24%, экспозиция
+                                            расширилась 35%
+                                        </div>
+                                        <p>
+                                            Сезонное снижение активности ариендаторов способствовало расширению
+                                            экспозиции, но не дефицит объектов и не снизило ставки найма, показало
+                                            исследование Управления ...
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image6.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">23.12.2024</div>
+                                        <div class="block-news__title">
+                                            На рынке аренды спрос снизился на 24%, экспозиция
+                                            расширилась 35%
+                                        </div>
+                                        <p>
+                                            Сезонное снижение активности ариендаторов способствовало расширению
+                                            экспозиции, но не дефицит объектов и не снизило ставки найма, показало
+                                            исследование Управления ...
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="./" class="block-news__column">
+                                    <div class="block-news__image">
+                                        <img loading="lazy" src="img/news/image7.webp" alt="">
+                                    </div>
+                                    <div class="block-news__item">
+                                        <div class="block-news__badge">23.12.2024</div>
+                                        <div class="block-news__title">
+                                            Рынок новостроек: чем запомнился 2024 год,
+                                            и каким будет 2025-й прогноз
+                                        </div>
+                                        <p>
+                                            Специалисты направления «Новостройки» и Аналитического центра
+                                            ИНКОМ-Недвижимость выявили наиболее значимые тенденции массового первичного
+                                            рынка в 2024 году и сдел ...
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/contacts.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

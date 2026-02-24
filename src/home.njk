@@ -1,0 +1,3549 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная страница</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div class="block-intro">
+				<img src="img/banner1.webp" alt="" class="block-intro__banner">
+				<div class="container">
+					<div class="block-intro__content">
+						<div class="block-intro__heading-complex">
+							<h1 class="title1">
+								<span>Продажа и подбор недвижимости</span> для жизни и инвестирования
+							</h1>
+						</div>
+						<div data-tabs="480, max" class="tabs-filter">
+							<nav data-tabs-titles class="tabs-filter__navigation">
+								<button type="button" class="tabs-filter__title bg-pink _tab-active">
+									<span>Вторичка</span>
+								</button>
+								<button type="button" class="tabs-filter__title bg-yellow">
+									<span>Новостройки</span>
+								</button>
+								<button type="button" class="tabs-filter__title bg-green">
+									<span>Коммерческая</span>
+								</button>
+								<button type="button" class="tabs-filter__title bg-blue">
+									<span>Дома, коттеджи, таунхаусы</span>
+								</button>
+								<button type="button" class="tabs-filter__title bg-violet">
+									<span>Участки</span>
+								</button>
+								<button type="button" class="tabs-filter__title bg-light-violet">
+									<span>Гаражи</span>
+								</button>
+							</nav>
+							<div data-tabs-body class="tabs-filter__content">
+								<div class="tabs-filter__body">
+									<form action="#" class="search-filter">
+										<div data-spollers="992,max" data-one-spoller class="search-filter__content">
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Вид объекта</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Купить</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Продать</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-filter">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Фильтры</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__left">
+															<div class="search-filter__label">Планировка:</div>
+															<div class="options">
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Студия</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">1 комната</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">2 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">3 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="5" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">4+ комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Свободная
+																			планировка</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+														<div class="search-filter__right">
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<select name="form[]" class="select1">
+																	<option value="" data-show data-label
+																		data-label="Выберите пункт:" selected>Выбрать
+																	</option>
+																	<option value="1">Пункт №1</option>
+																	<option value="2">Пункт №2</option>
+																	<option value="3">Пункт №3</option>
+																	<option value="4">Пункт №4</option>
+																</select>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Стоимость:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этаж:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этажность дома:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-price">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Цены</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__prices">
+															<div class="search-filter__inputs">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="От">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="До">
+															</div>
+															<button type="button"
+																class="search-filter__button-price btn bg-red"><span>Применить</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Район, адрес</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Остоженка</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Китай-Город</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="3" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Патриаршие
+																		Пруд</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="4" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Арбат</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="5" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Тверскоя</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="6" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="7" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Хамовники</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="8" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Москва сити</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="9" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Пресненский</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="10" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Чистые Пруды</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="11" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Южное</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="12" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__button btn bg-red">
+												<svg aria-hidden="true" width="30" height="30">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg>
+											</div>
+										</div>
+										<button type="submit" class="btn bg-red">
+											<span>Подобрать варианты</span>
+											<svg aria-hidden="true" width="10" height="18">
+												<use xlink:href="img/sprite.svg#arrow1"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+								<div class="tabs-filter__body">
+									<form action="#" class="search-filter">
+										<div data-spollers="992,max" data-one-spoller class="search-filter__content">
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Вид объекта</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Купить</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Продать</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-filter">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Фильтры</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__left">
+															<div class="search-filter__label">Планировка:</div>
+															<div class="options">
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Студия</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">1 комната</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">2 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">3 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="5" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">4+ комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Свободная
+																			планировка</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+														<div class="search-filter__right">
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<select name="form[]" class="select1">
+																	<option value="" data-show data-label
+																		data-label="Выберите пункт:" selected>Выбрать
+																	</option>
+																	<option value="1">Пункт №1</option>
+																	<option value="2">Пункт №2</option>
+																	<option value="3">Пункт №3</option>
+																	<option value="4">Пункт №4</option>
+																</select>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Стоимость:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этаж:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этажность дома:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-price">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Цены</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__prices">
+															<div class="search-filter__inputs">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="От">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="До">
+															</div>
+															<button type="button"
+																class="search-filter__button-price btn bg-red"><span>Применить</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Район, адрес</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Остоженка</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Китай-Город</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="3" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Патриаршие
+																		Пруд</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="4" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Арбат</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="5" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Тверскоя</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="6" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="7" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Хамовники</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="8" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Москва сити</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="9" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Пресненский</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="10" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Чистые Пруды</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="11" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Южное</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="12" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__button btn bg-red">
+												<svg aria-hidden="true" width="30" height="30">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg>
+											</div>
+										</div>
+										<button type="submit" class="btn bg-red">
+											<span>Подобрать варианты</span>
+											<svg aria-hidden="true" width="10" height="18">
+												<use xlink:href="img/sprite.svg#arrow1"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+								<div class="tabs-filter__body">
+									<form action="#" class="search-filter">
+										<div data-spollers="992,max" data-one-spoller class="search-filter__content">
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Вид объекта</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Купить</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Продать</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-filter">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Фильтры</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__left">
+															<div class="search-filter__label">Планировка:</div>
+															<div class="options">
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Студия</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">1 комната</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">2 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">3 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="5" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">4+ комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Свободная
+																			планировка</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+														<div class="search-filter__right">
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<select name="form[]" class="select1">
+																	<option value="" data-show data-label
+																		data-label="Выберите пункт:" selected>Выбрать
+																	</option>
+																	<option value="1">Пункт №1</option>
+																	<option value="2">Пункт №2</option>
+																	<option value="3">Пункт №3</option>
+																	<option value="4">Пункт №4</option>
+																</select>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Стоимость:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этаж:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этажность дома:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-price">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Цены</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__prices">
+															<div class="search-filter__inputs">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="От">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="До">
+															</div>
+															<button type="button"
+																class="search-filter__button-price btn bg-red"><span>Применить</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Район, адрес</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Остоженка</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Китай-Город</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="3" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Патриаршие
+																		Пруд</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="4" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Арбат</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="5" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Тверскоя</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="6" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="7" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Хамовники</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="8" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Москва сити</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="9" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Пресненский</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="10" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Чистые Пруды</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="11" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Южное</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="12" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__button btn bg-red">
+												<svg aria-hidden="true" width="30" height="30">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg>
+											</div>
+										</div>
+										<button type="submit" class="btn bg-red">
+											<span>Подобрать варианты</span>
+											<svg aria-hidden="true" width="10" height="18">
+												<use xlink:href="img/sprite.svg#arrow1"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+								<div class="tabs-filter__body">
+									<form action="#" class="search-filter">
+										<div data-spollers="992,max" data-one-spoller class="search-filter__content">
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Вид объекта</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Купить</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Продать</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-filter">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Фильтры</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__left">
+															<div class="search-filter__label">Планировка:</div>
+															<div class="options">
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Студия</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">1 комната</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">2 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">3 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="5" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">4+ комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Свободная
+																			планировка</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+														<div class="search-filter__right">
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<select name="form[]" class="select1">
+																	<option value="" data-show data-label
+																		data-label="Выберите пункт:" selected>Выбрать
+																	</option>
+																	<option value="1">Пункт №1</option>
+																	<option value="2">Пункт №2</option>
+																	<option value="3">Пункт №3</option>
+																	<option value="4">Пункт №4</option>
+																</select>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Стоимость:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этаж:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этажность дома:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-price">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Цены</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__prices">
+															<div class="search-filter__inputs">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="От">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="До">
+															</div>
+															<button type="button"
+																class="search-filter__button-price btn bg-red"><span>Применить</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Район, адрес</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Остоженка</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Китай-Город</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="3" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Патриаршие
+																		Пруд</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="4" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Арбат</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="5" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Тверскоя</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="6" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="7" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Хамовники</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="8" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Москва сити</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="9" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Пресненский</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="10" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Чистые Пруды</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="11" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Южное</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="12" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__button btn bg-red">
+												<svg aria-hidden="true" width="30" height="30">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg>
+											</div>
+										</div>
+										<button type="submit" class="btn bg-red">
+											<span>Подобрать варианты</span>
+											<svg aria-hidden="true" width="10" height="18">
+												<use xlink:href="img/sprite.svg#arrow1"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+								<div class="tabs-filter__body">
+									<form action="#" class="search-filter">
+										<div data-spollers="992,max" data-one-spoller class="search-filter__content">
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Вид объекта</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Купить</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Продать</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-filter">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Фильтры</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__left">
+															<div class="search-filter__label">Планировка:</div>
+															<div class="options">
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Студия</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">1 комната</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">2 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">3 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="5" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">4+ комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Свободная
+																			планировка</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+														<div class="search-filter__right">
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<select name="form[]" class="select1">
+																	<option value="" data-show data-label
+																		data-label="Выберите пункт:" selected>Выбрать
+																	</option>
+																	<option value="1">Пункт №1</option>
+																	<option value="2">Пункт №2</option>
+																	<option value="3">Пункт №3</option>
+																	<option value="4">Пункт №4</option>
+																</select>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Стоимость:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этаж:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этажность дома:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-price">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Цены</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__prices">
+															<div class="search-filter__inputs">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="От">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="До">
+															</div>
+															<button type="button"
+																class="search-filter__button-price btn bg-red"><span>Применить</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Район, адрес</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Остоженка</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Китай-Город</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="3" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Патриаршие
+																		Пруд</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="4" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Арбат</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="5" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Тверскоя</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="6" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="7" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Хамовники</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="8" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Москва сити</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="9" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Пресненский</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="10" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Чистые Пруды</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="11" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Южное</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="12" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__button btn bg-red">
+												<svg aria-hidden="true" width="30" height="30">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg>
+											</div>
+										</div>
+										<button type="submit" class="btn bg-red">
+											<span>Подобрать варианты</span>
+											<svg aria-hidden="true" width="10" height="18">
+												<use xlink:href="img/sprite.svg#arrow1"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+								<div class="tabs-filter__body">
+									<form action="#" class="search-filter">
+										<div data-spollers="992,max" data-one-spoller class="search-filter__content">
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Вид объекта</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Купить</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Продать</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-filter">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Фильтры</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__left">
+															<div class="search-filter__label">Планировка:</div>
+															<div class="options">
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Студия</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">1 комната</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">2 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">3 комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="5" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">4+ комнаты</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Свободная
+																			планировка</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+														<div class="search-filter__right">
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<select name="form[]" class="select1">
+																	<option value="" data-show data-label
+																		data-label="Выберите пункт:" selected>Выбрать
+																	</option>
+																	<option value="1">Пункт №1</option>
+																	<option value="2">Пункт №2</option>
+																	<option value="3">Пункт №3</option>
+																	<option value="4">Пункт №4</option>
+																</select>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Площадь в кв.м:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Стоимость:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этаж:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+															<div class="search-filter__card">
+																<div class="search-filter__label">Этажность дома:</div>
+																<div class="inputs">
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="От">
+																	</div>
+																	<div class="inputs__input">
+																		<input
+																			onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+																			data-required="" autocomplete="off"
+																			type="text" name="form[]"
+																			data-error="Обязательное поле"
+																			placeholder="До">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column column-price">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Цены</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="search-filter__prices">
+															<div class="search-filter__inputs">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="От">
+																<input
+																	onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+																	data-required autocomplete="off" type="text"
+																	name="form[]" data-error="Ввведите число"
+																	placeholder="До">
+															</div>
+															<button type="button"
+																class="search-filter__button-price btn bg-red"><span>Применить</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__column">
+												<div data-spoller class="search-filter__titles">
+													<div class="search-filter__title">Район, адрес</div>
+													<div class="arrow1">
+														<svg aria-hidden="true" width="10" height="7">
+															<use xlink:href="img/sprite.svg#arrow2"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="search-filter__dropdowm">
+													<div class="search-filter__scroll">
+														<div class="options">
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="1" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Остоженка</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="2" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Китай-Город</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="3" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Патриаршие
+																		Пруд</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="4" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Арбат</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="5" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Тверскоя</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="6" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="7" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Хамовники</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="8" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Москва сити</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="9" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Пресненский</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="10" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Чистые Пруды</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="11" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Южное</span>
+																</span>
+															</label>
+															<label class="options__item">
+																<input hidden class="options__input" type="radio"
+																	value="12" name="option">
+																<span class="options__label">
+																	<span class="options__icon"></span>
+																	<span class="options__text">Замоскворечье</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-filter__button btn bg-red">
+												<svg aria-hidden="true" width="30" height="30">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg>
+											</div>
+										</div>
+										<button type="submit" class="btn bg-red">
+											<span>Подобрать варианты</span>
+											<svg aria-hidden="true" width="10" height="18">
+												<use xlink:href="img/sprite.svg#arrow1"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-about">
+				<div class="container">
+					<div class="block-about__content">
+						<h2 class="title2">
+							<span>Радуга —</span> спектр услуг<br> и
+							индивидуальный подход к недвижимости
+						</h2>
+						<div class="block-about__body">
+							<div class="block-about__column column-bg bg-green">
+								<div class="block-about__icon">
+									<img loading="lazy" src="img/icons/icon1.svg" alt="">
+								</div>
+								<span>продажа недвижмости</span>
+							</div>
+							<div class="block-about__column">
+								<div class="block-about__icon">
+									<img loading="lazy" src="img/icons/icon2.svg" alt="">
+								</div>
+								<span>Оценка недвижмости</span>
+							</div>
+							<div class="block-about__column column-bg bg-yellow">
+								<div class="block-about__icon">
+									<img loading="lazy" src="img/icons/icon3.svg" alt="">
+								</div>
+								<span>Безопасная сделка</span>
+							</div>
+							<div class="block-about__column">
+								<div class="block-about__icon">
+									<img loading="lazy" src="img/icons/icon4.svg" alt="">
+								</div>
+								<span>Огромная<br> база объектов</span>
+							</div>
+							<div class="block-about__column column-bg bg-blue">
+								<div class="block-about__icon">
+									<img loading="lazy" src="img/icons/icon5.svg" alt="">
+								</div>
+								<span>Юридическая экспертиза</span>
+							</div>
+							<div class="block-about__column">
+								<div class="block-about__icon">
+									<img loading="lazy" src="img/icons/icon6.svg" alt="">
+								</div>
+								<span>Сопровождение сделок</span>
+							</div>
+							<div class="block-about__column column-bg bg-light-violet">
+								<div class="block-about__icon">
+									<img loading="lazy" src="img/icons/icon7.svg" alt="">
+								</div>
+								<span>Поиск и подбор<br> недвижимости</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-search">
+				<div class="container">
+					<img loading="lazy" src="img/line/line1.svg" alt="" class="block-search__line1 line1 line">
+					<img loading="lazy" src="img/line/line2.svg" alt="" class="block-search__line2 line">
+					<img loading="lazy" src="img/line/line3.svg" alt="" class="block-search__line3 line">
+					<div class="block-search__content">
+						<h2 class="title2">Быстрый поиск</h2>
+						<div class="block-search__body">
+							<a href="./" class="block-search__column">
+								<img loading="lazy" src="img/image1.webp" alt="" class="block-search__pic1">
+								<div class="block-search__item">
+									<div class="block-search__title">С евро ремонтом</div>
+									<div class="block-search__arrow">
+										<svg aria-hidden="true" width="8" height="14">
+											<use xlink:href="img/sprite.svg#arrow1"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+							<a href="./" class="block-search__column">
+								<img loading="lazy" src="img/image2.webp" alt="" class="block-search__pic1">
+								<div class="block-search__item">
+									<div class="block-search__title">В новом доме</div>
+									<div class="block-search__arrow">
+										<svg aria-hidden="true" width="8" height="14">
+											<use xlink:href="img/sprite.svg#arrow1"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+							<a href="./" class="block-search__column">
+								<img loading="lazy" src="img/image3.webp" alt="" class="block-search__pic1">
+								<div class="block-search__item">
+									<div class="block-search__title">С большой кухней</div>
+									<div class="block-search__arrow">
+										<svg aria-hidden="true" width="8" height="14">
+											<use xlink:href="img/sprite.svg#arrow1"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-consultation block1">
+				<div class="container">
+					<div class="block-consultation__content">
+						<img loading="lazy" src="img/image4.webp" alt="" class="block-consultation__pic1">
+						<div class="block-consultation__body">
+							<div class="block-consultation__center">
+								<div class="block-consultation__title">Бесплатная консультация</div>
+								<p>
+									Сообщите нам, что именно вы ищете, и мы
+									подберем для вас наилучшие варианты
+								</p>
+							</div>
+							<a href="./" data-popup="#form1" class="btn bg-yellow">
+								<span>Заказать</span>
+								<svg aria-hidden="true" width="10" height="18">
+									<use xlink:href="img/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-hot-offers">
+				<div class="container">
+					<div class="block-hot-offers__content">
+						<h2 class="title2">Самые горячие предложения</h2>
+						<div class="block-hot-offers__body">
+							<div class="block-hot-offers__left product-card-info">
+								<div class="product-card-info__title">ЖК «Голос Меридиана»</div>
+								<div class="product-card-info__locations">
+									<div class="product-card-info__location">
+										<svg aria-hidden="true" width="15" height="18">
+											<use xlink:href="img/sprite.svg#location"></use>
+										</svg>
+										<span>Иваново</span>
+									</div>
+									<a href="./" class="btn bg-blue">
+										<span>На карте</span>
+									</a>
+								</div>
+								<div class="product-card-info__text">
+									<p>
+										Там, где роскошная жизнь
+										достигает новых высот
+									</p>
+									<p>
+										Расположенное в самом сердце
+										города, среди пышной зелени и
+										живописных видов на
+										Центральный парк
+									</p>
+								</div>
+								<div class="product-card-info__info">
+									<div class="product-card-info__price">
+										<svg aria-hidden="true" width="26" height="26">
+											<use xlink:href="img/sprite.svg#money"></use>
+										</svg>
+										<span>3.750.000</span>
+										<svg aria-hidden="true" width="24" height="26">
+											<use xlink:href="img/sprite.svg#ruble"></use>
+										</svg>
+									</div>
+									<div class="product-card-info__square">
+										<svg aria-hidden="true" width="25" height="25">
+											<use xlink:href="img/sprite.svg#m2"></use>
+										</svg>
+										<span>47 кв.м</span>
+									</div>
+								</div>
+								<a href="./" class="btn bg-green">
+									<span>Подробнее</span>
+									<svg aria-hidden="true" width="10" height="18">
+										<use xlink:href="img/sprite.svg#arrow1"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="block-hot-offers__right">
+								<a data-fancybox="gallery1" href="img/image5.webp">
+									<img loading="lazy" src="img/image5.webp" alt="">
+								</a>
+								<a data-fancybox="gallery1" href="img/image6.webp">
+									<img loading="lazy" src="img/image6.webp" alt="">
+								</a>
+								<a data-fancybox="gallery1" href="img/image7.webp">
+									<img loading="lazy" src="img/image7.webp" alt="">
+								</a>
+								<a data-fancybox="gallery1" href="img/image6.webp">
+									<img loading="lazy" src="img/image6.webp" alt="">
+									<div class="block-hot-offers__bg"></div>
+									<div class="block-hot-offers__more">
+										<svg aria-hidden="true" width="16" height="14">
+											<use xlink:href="img/sprite.svg#image"></use>
+										</svg>
+										<span>15+</span>
+									</div>
+								</a>
+								<a data-fancybox="gallery1" href="img/image5.webp">
+									<img loading="lazy" src="img/image5.webp" alt="">
+								</a>
+								<a data-fancybox="gallery1" href="img/image6.webp">
+									<img loading="lazy" src="img/image6.webp" alt="">
+								</a>
+								<a data-fancybox="gallery1" href="img/image7.webp">
+									<img loading="lazy" src="img/image7.webp" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-filter2 block1">
+				<div class="container">
+					<img loading="lazy" src="img/line/line1.svg" alt="" class="block-filter2__line1 line1 line">
+					<img loading="lazy" src="img/line/line4.svg" alt="" class="block-filter2__line2 line2 line">
+					<img loading="lazy" src="img/line/line5.svg" alt="" class="block-filter2__line3 line3 line">
+					<div data-tabs="480, max" class="tabs-filter">
+						<nav data-tabs-titles class="tabs-filter__navigation">
+							<button type="button" class="tabs-filter__title bg-pink _tab-active">
+								<span>Вторичка</span>
+							</button>
+							<button type="button" class="tabs-filter__title bg-yellow">
+								<span>Новостройки</span>
+							</button>
+							<button type="button" class="tabs-filter__title bg-green">
+								<span>Коммерческая</span>
+							</button>
+							<button type="button" class="tabs-filter__title bg-blue">
+								<span>Дома, коттеджи, таунхаусы</span>
+							</button>
+							<button type="button" class="tabs-filter__title bg-violet">
+								<span>Участки</span>
+							</button>
+							<button type="button" class="tabs-filter__title bg-light-violet">
+								<span>Гаражи</span>
+							</button>
+						</nav>
+						<div data-tabs-body class="tabs-filter__content">
+							<div class="tabs-filter__body">
+								<form action="#" class="search-filter2">
+									<div class="search-filter2__content">
+										<div class="search-filter2__body">
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Срок сдачи ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите дату:"
+														selected>Введите дату
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Количество комнат</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label
+														data-label="Выберите количество комнат:" selected>Выберите
+														количество комнат
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Название ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите название:"
+														selected>Введите название
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Стоимость, (₽)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="100 000 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Площадь, (м2)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="1 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Фильтры</div>
+												<div class="search-filter__column">
+													<div class="search-filter__titles">
+														<div class="search-filter__title">Все фильтры</div>
+														<div class="arrow1">
+															<svg aria-hidden="true" width="20" height="18">
+																<use xlink:href="img/sprite.svg#filter"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="search-filter__dropdowm">
+														<div class="search-filter__scroll">
+															<div class="options">
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ИЖС</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">СНТ</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ДНП</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Промзначения</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="search-filter2__buttons">
+											<a href="./" class="btn bg-blue">
+												<span>На карте</span>
+											</a>
+											<button type="submit" class="btn bg-green">
+												<span>Показать</span>
+												<svg aria-hidden="true" width="10" height="18">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tabs-filter__body">
+								<form action="#" class="search-filter2 search-filter2-yellow">
+									<div class="search-filter2__content">
+										<div class="search-filter2__body">
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Срок сдачи ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите дату:"
+														selected>Введите дату
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Количество комнат</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label
+														data-label="Выберите количество комнат:" selected>Выберите
+														количество комнат
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Название ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите название:"
+														selected>Введите название
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Стоимость, (₽)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="100 000 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Площадь, (м2)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="1 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Фильтры</div>
+												<div class="search-filter__column">
+													<div class="search-filter__titles">
+														<div class="search-filter__title">Все фильтры</div>
+														<div class="arrow1">
+															<svg aria-hidden="true" width="20" height="18">
+																<use xlink:href="img/sprite.svg#filter"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="search-filter__dropdowm">
+														<div class="search-filter__scroll">
+															<div class="options">
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ИЖС</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">СНТ</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ДНП</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Промзначения</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="search-filter2__buttons">
+											<a href="./" class="btn bg-blue">
+												<span>На карте</span>
+											</a>
+											<button type="submit" class="btn bg-green">
+												<span>Показать</span>
+												<svg aria-hidden="true" width="10" height="18">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tabs-filter__body">
+								<form action="#" class="search-filter2 search-filter2-green">
+									<div class="search-filter2__content">
+										<div class="search-filter2__body">
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Срок сдачи ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите дату:"
+														selected>Введите дату
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Количество комнат</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label
+														data-label="Выберите количество комнат:" selected>Выберите
+														количество комнат
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Название ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите название:"
+														selected>Введите название
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Стоимость, (₽)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="100 000 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Площадь, (м2)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="1 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Фильтры</div>
+												<div class="search-filter__column">
+													<div class="search-filter__titles">
+														<div class="search-filter__title">Все фильтры</div>
+														<div class="arrow1">
+															<svg aria-hidden="true" width="20" height="18">
+																<use xlink:href="img/sprite.svg#filter"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="search-filter__dropdowm">
+														<div class="search-filter__scroll">
+															<div class="options">
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ИЖС</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">СНТ</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ДНП</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Промзначения</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="search-filter2__buttons">
+											<a href="./" class="btn bg-blue">
+												<span>На карте</span>
+											</a>
+											<button type="submit" class="btn bg-green">
+												<span>Показать</span>
+												<svg aria-hidden="true" width="10" height="18">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tabs-filter__body">
+								<form action="#" class="search-filter2 search-filter2-blue">
+									<div class="search-filter2__content">
+										<div class="search-filter2__body">
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Срок сдачи ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите дату:"
+														selected>Введите дату
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Количество комнат</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label
+														data-label="Выберите количество комнат:" selected>Выберите
+														количество комнат
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Название ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите название:"
+														selected>Введите название
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Стоимость, (₽)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="100 000 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Площадь, (м2)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="1 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Фильтры</div>
+												<div class="search-filter__column">
+													<div class="search-filter__titles">
+														<div class="search-filter__title">Все фильтры</div>
+														<div class="arrow1">
+															<svg aria-hidden="true" width="20" height="18">
+																<use xlink:href="img/sprite.svg#filter"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="search-filter__dropdowm">
+														<div class="search-filter__scroll">
+															<div class="options">
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ИЖС</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">СНТ</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ДНП</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Промзначения</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="search-filter2__buttons">
+											<a href="./" class="btn bg-blue">
+												<span>На карте</span>
+											</a>
+											<button type="submit" class="btn bg-green">
+												<span>Показать</span>
+												<svg aria-hidden="true" width="10" height="18">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tabs-filter__body">
+								<form action="#" class="search-filter2 search-filter2-violet">
+									<div class="search-filter2__content">
+										<div class="search-filter2__body">
+											<img loading="lazy" src="img/image19.webp" alt=""
+												class="search-filter2__pic1">
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Срок сдачи ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите дату:"
+														selected>Введите дату
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column column-none">
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Название ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите название:"
+														selected>Введите название
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column column-none">
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Площадь, (м2)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="1 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Фильтры</div>
+												<div class="search-filter__column">
+													<div class="search-filter__titles">
+														<div class="search-filter__title">Все фильтры</div>
+														<div class="arrow1">
+															<svg aria-hidden="true" width="20" height="18">
+																<use xlink:href="img/sprite.svg#filter"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="search-filter__dropdowm">
+														<div class="search-filter__scroll">
+															<div class="options">
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="1" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ИЖС</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden="" class="options__input" type="radio"
+																		value="2" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">СНТ</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="3" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">ДНП</span>
+																	</span>
+																</label>
+																<label class="options__item">
+																	<input hidden class="options__input" type="radio"
+																		value="4" name="option">
+																	<span class="options__label">
+																		<span class="options__icon"></span>
+																		<span class="options__text">Промзначения</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="search-filter2__buttons">
+											<a href="./" class="btn bg-blue">
+												<span>На карте</span>
+											</a>
+											<button type="submit" class="btn bg-green">
+												<span>Показать</span>
+												<svg aria-hidden="true" width="10" height="18">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tabs-filter__body">
+								<form action="#" class="search-filter2 search-filter2-light-violet">
+									<div class="search-filter2__content">
+										<div class="search-filter2__body">
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Срок сдачи ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите дату:"
+														selected>Введите дату
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Количество комнат</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label
+														data-label="Выберите количество комнат:" selected>Выберите
+														количество комнат
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Название ЖК</div>
+												<select name="form[]" class="select1">
+													<option value="" data-show data-label data-label="Введите название:"
+														selected>Введите название
+													</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Стоимость, (₽)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="100 000 000">
+													</div>
+												</div>
+											</div>
+											<div class="search-filter2__column">
+												<div class="search-filter2__label">Площадь, (м2)</div>
+												<div class="inputs">
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="0">
+													</div>
+													<div class="inputs__input">
+														<input
+															onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+															data-required="" autocomplete="off" type="text"
+															name="form[]" data-error="Обязательное поле"
+															placeholder="1 000">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="search-filter2__buttons">
+											<a href="./" class="btn bg-blue">
+												<span>На карте</span>
+											</a>
+											<button type="submit" class="btn bg-green">
+												<span>Показать</span>
+												<svg aria-hidden="true" width="10" height="18">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-forms block1">
+				<div class="container">
+					<div class="block-forms__content">
+						<div class="block-forms__top">
+							<h2 class="title2">У вас возникли вопросы?</h2>
+							<p>
+								Оставляйте заявку на звонок прямо сейчас
+							</p>
+						</div>
+						<form action="#" data-dev data-popup-message="#thanks1" class="form">
+							<div class="form__inputs">
+								<div class="form__input">
+									<input data-required autocomplete="off" type="text" name="form[]"
+										data-error="Обязательное поле" placeholder="Введите имя">
+								</div>
+								<div class="form__input">
+									<input data-required autocomplete="off" type="text" data-error="Обязательное поле"
+										name="form[]" placeholder="" class="telephone">
+									<div class="form__placeholder">
+										<span>+7</span> (999) 999-99-99
+									</div>
+								</div>
+							</div>
+							<div class="form__options">
+								<div class="form__options-title">Способ связи</div>
+								<div class="options">
+									<label class="options__item">
+										<input hidden class="options__input" checked type="radio" value="1"
+											name="option">
+										<span class="options__label">
+											<span class="options__icon"></span>
+											<span class="options__text">Telegram</span>
+										</span>
+									</label>
+									<label class="options__item">
+										<input hidden class="options__input" type="radio" value="2" name="option">
+										<span class="options__label">
+											<span class="options__icon"></span>
+											<span class="options__text">WhatsApp</span>
+										</span>
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="btn bg-green">
+								<span>Отправить</span>
+								<svg aria-hidden="true" width="10" height="18">
+									<use xlink:href="img/sprite.svg#arrow1"></use>
+								</svg>
+							</button>
+							<div class="form__text">
+								Нажимая на кнопку “Отправить” вы соглашаетесь с условиями <a href="./">политики
+									конфиденциальности</a>
+							</div>
+						</form>
+					</div>
+					<img loading="lazy" src="img/image8.webp" alt="" class="block-forms__pic1">
+				</div>
+			</div>
+
+			<div class="block-questions block1">
+				<img loading="lazy" src="img/banner9.webp" alt="" class="block-questions__pic1">
+				<div class="container">
+					<div class="block-questions__content">
+						<div class="block-questions__body">
+							<h2 class="title2">Часто задаваемые вопросы</h2>
+							<div data-spollers class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										<span>Можно ли в ипотеку?</span>
+										<div class="arrow1">
+											<svg aria-hidden="true" width="10" height="7">
+												<use xlink:href="img/sprite.svg#arrow2"></use>
+											</svg>
+										</div>
+									</button>
+									<div class="spollers__body">
+										<div class="spollers__text">
+											<p>
+												Доверьте продажу вашей недвижимости профессионалам, мы быстро продадим
+												вашу
+												квартиру по цене которая вам подходит.
+											</p>
+											<p>
+												Предлагаем комплексный подход, а оплата услуг только после сделки
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="spollers__item spollers-yellow">
+									<button type="button" data-spoller class="spollers__title">
+										<span>Сопровождаете ли вы сделку?</span>
+										<div class="arrow1">
+											<svg aria-hidden="true" width="10" height="7">
+												<use xlink:href="img/sprite.svg#arrow2"></use>
+											</svg>
+										</div>
+									</button>
+									<div class="spollers__body">
+										<div class="spollers__text">
+											<p>
+												Доверьте продажу вашей недвижимости профессионалам, мы быстро продадим
+												вашу
+												квартиру по цене которая вам подходит.
+											</p>
+											<p>
+												Предлагаем комплексный подход, а оплата услуг только после сделки
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="spollers__item spollers-light-violet">
+									<button type="button" data-spoller class="spollers__title">
+										<span>Как можно понизить ставку по ипотеке?</span>
+										<div class="arrow1">
+											<svg aria-hidden="true" width="10" height="7">
+												<use xlink:href="img/sprite.svg#arrow2"></use>
+											</svg>
+										</div>
+									</button>
+									<div class="spollers__body">
+										<div class="spollers__text">
+											<p>
+												Доверьте продажу вашей недвижимости профессионалам, мы быстро продадим
+												вашу
+												квартиру по цене которая вам подходит.
+											</p>
+											<p>
+												Предлагаем комплексный подход, а оплата услуг только после сделки
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="spollers__item spollers-blue">
+									<button type="button" data-spoller class="spollers__title">
+										<span>Какой срок от запроса до покупки?</span>
+										<div class="arrow1">
+											<svg aria-hidden="true" width="10" height="7">
+												<use xlink:href="img/sprite.svg#arrow2"></use>
+											</svg>
+										</div>
+									</button>
+									<div class="spollers__body">
+										<div class="spollers__text">
+											<p>
+												Доверьте продажу вашей недвижимости профессионалам, мы быстро продадим
+												вашу
+												квартиру по цене которая вам подходит.
+											</p>
+											<p>
+												Предлагаем комплексный подход, а оплата услуг только после сделки
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img loading="lazy" src="img/image9.webp" alt="" class="block-questions__pic2">
+					</div>
+				</div>
+			</div>
+
+			<div class="block-info1">
+				<div class="container">
+					<img loading="lazy" src="img/line/line6.svg" alt="" class="block-info1__line1">
+					<img loading="lazy" src="img/line/line7.svg" alt="" class="block-info1__line2">
+					<div class="block-info1__body">
+						<div class="block-info1__column">
+							<div class="block-info1__item">
+								<h2 class="title2">Продать квартиру</h2>
+								<ul>
+									<li>
+										<svg aria-hidden="true" width="24" height="24">
+											<use xlink:href="img/sprite.svg#check1"></use>
+										</svg>
+										<span>Доверьте продажу вашей недвижимости профессионалам, мы быстро продадим
+											вашу
+											квартиру по цене которая вам подходит.</span>
+									</li>
+									<li>
+										<svg aria-hidden="true" width="24" height="24">
+											<use xlink:href="img/sprite.svg#check1"></use>
+										</svg>
+										<span>Предлагаем комплексный подход, а оплата услуг только после сделки</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="block-info1__column">
+							<div class="block-info1__item">
+								<h2 class="title2"><span>Купить квартиру</span></h2>
+								<ul>
+									<li>
+										<svg aria-hidden="true" width="24" height="24">
+											<use xlink:href="img/sprite.svg#check1"></use>
+										</svg>
+										<span>Подберем объект который соответсвует вашим требованиям и ожиданиям</span>
+									</li>
+									<li>
+										<svg aria-hidden="true" width="24" height="24">
+											<use xlink:href="img/sprite.svg#check1"></use>
+										</svg>
+										<span>Проверим его юридическую чистоту и проведем сделку до передачи
+											ключей</span>
+									</li>
+									<li>
+										<svg aria-hidden="true" width="24" height="24">
+											<use xlink:href="img/sprite.svg#check1"></use>
+										</svg>
+										<span>При необходимости окажем помощь с ипотекой</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<img loading="lazy" src="img/image10.webp" alt="" class="block-info1__pic1">
+				</div>
+			</div>
+
+			<div class="block-consultation block-consultation2 block-violet-cons">
+				<div class="container">
+					<div class="block-consultation__content">
+						<div class="block-consultation__body">
+							<div class="block-consultation__center">
+								<div class="block-consultation__title">
+									<svg aria-hidden="true" width="40" height="40">
+										<use xlink:href="img/sprite.svg#questions"></use>
+									</svg>
+									Нужна помощь в подборе квартиры?
+								</div>
+							</div>
+							<a href="./" data-popup="#form2" class="btn bg-yellow">
+								<span>Написать нам</span>
+								<svg aria-hidden="true" width="10" height="18">
+									<use xlink:href="img/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-services1">
+				<img loading="lazy" src="img/banner8.webp" alt="" class="block-services1__pic1">
+				<div class="container">
+					<div class="block-services1__content">
+						<h2 class="title2">
+							Основные наши услуги
+						</h2>
+						<div class="block-services1__body">
+							<div class="block-services1__column bg-blue">
+								<div class="block-services1__icon">
+									<img loading="lazy" src="img/icons/icon1.svg" alt="">
+								</div>
+								<span>Поиск и подбор недвижимости</span>
+							</div>
+							<div class="block-services1__column bg-yellow">
+								<div class="block-services1__icon">
+									<img loading="lazy" src="img/icons/icon6.svg" alt="">
+								</div>
+								<span>Сопровождение сделки</span>
+							</div>
+							<div class="block-services1__column">
+								<div class="block-services1__icon">
+									<img loading="lazy" src="img/icons/icon2.svg" alt="">
+								</div>
+								<span>Продажа недвижимости</span>
+							</div>
+							<div class="block-services1__column bg-green">
+								<div class="block-services1__icon">
+									<img loading="lazy" src="img/icons/icon8.svg" alt="">
+								</div>
+								<span>Помощь в оформлении ипотеки</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-consultation block-consultation2 block-blue-cons">
+				<div class="container">
+					<div class="block-consultation__content">
+						<div class="block-consultation__body">
+							<div class="block-consultation__center">
+								<div class="block-consultation__title">
+									<img loading="lazy" src="img/icons/phone1.svg" alt="">
+									Оставьте заявку на звонок
+								</div>
+							</div>
+							<a href="./" data-popup="#form1" class="btn bg-red">
+								<span>Заказать звонок</span>
+								<svg aria-hidden="true" width="10" height="18">
+									<use xlink:href="img/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% include 'blocks/reviews.njk' %}
+
+			{% include 'blocks/teams.njk' %}
+
+			{% include 'blocks/contacts.njk' %}
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	{% include 'blocks/popups.njk' %}
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
