@@ -1983,23 +1983,137 @@ if (document.readyState === 'loading') {
 //========================================================================================================================================================
 
 //Яндекс карта
-const map = document.querySelector('#map1');
-let myMap;
+function loadYandexMapsAPI() {
+  return new Promise((resolve, reject) => {
+    if (window.ymaps) {
+      resolve(window.ymaps);
+      return;
+    }
 
-if (map) {
-  ymaps.ready(init);
+    const script = document.createElement('script');
+    script.src = 'https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU';
+    script.type = 'text/javascript';
+    script.async = true;
 
-  function init() {
-    myMap = new ymaps.Map('map1', {
-      center: [55.694843, 37.435023],
-      zoom: 15,
-      controls: ['zoomControl'],
-      behaviors: ['drag']
-    }, {
-      searchControlProvider: 'yandex#search'
+    script.onload = () => {
+      ymaps.ready(() => resolve(window.ymaps));
+    };
+
+    script.onerror = reject;
+
+    document.head.appendChild(script);
+  });
+}
+
+function initMapWithObserver(mapElement, mapId, center, zoom, coordinates) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadYandexMapsAPI()
+          .then(ymaps => {
+            createMap(ymaps, mapId, center, zoom, coordinates);
+            observer.unobserve(mapElement);
+          })
+          .catch(error => {
+            console.error('Ошибка загрузки Яндекс.Карт:', error);
+          });
+      }
+    });
+  }, {
+    rootMargin: '100px',
+    threshold: 0.1
+  });
+
+  observer.observe(mapElement);
+}
+
+function createMap(ymaps, mapId, center, zoom, coordinates) {
+  const myMap = new ymaps.Map(mapId, {
+    center: center,
+    zoom: zoom,
+    controls: ['zoomControl'],
+    behaviors: ['drag']
+  }, {
+    searchControlProvider: 'yandex#search'
+  });
+
+  if (Array.isArray(coordinates[0])) {
+    coordinates.forEach(coords => {
+      const placemark = createCustomIcon(ymaps, coords);
+      myMap.geoObjects.add(placemark);
     });
 
-    // Массив с координатами для каждой карточки
+    setupMultiMarkerMap(ymaps, myMap, coordinates);
+  } else {
+    const myPlacemark = createCustomIcon(ymaps, coordinates);
+    myMap.geoObjects.add(myPlacemark);
+  }
+
+  return myMap;
+}
+
+function createCustomIcon(ymaps, coords) {
+  return new ymaps.Placemark(coords, {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/icons/map2.svg',
+    iconImageSize: [180, 180],
+    iconImageOffset: [-90, -90]
+  });
+}
+
+function setupMultiMarkerMap(ymaps, myMap, coordinatesArray) {
+  function getOffsetByScreenWidth() {
+    const width = window.innerWidth;
+    if (width <= 576) return 0.000;
+    if (width <= 768) return 0.000;
+    if (width <= 992) return 0.000;
+    if (width <= 1200) return 0.006;
+    return 0.003;
+  }
+
+  function getShiftedCoords(originalCoords) {
+    const offset = getOffsetByScreenWidth();
+    return [originalCoords[0], originalCoords[1] - offset];
+  }
+
+  const placemarks = coordinatesArray.map(coords => {
+    const placemark = createCustomIcon(ymaps, coords);
+    myMap.geoObjects.add(placemark);
+    return placemark;
+  });
+
+  const mapLinks = document.querySelectorAll('.map-link');
+
+  mapLinks.forEach((link, index) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      if (myMap && coordinatesArray[index]) {
+        placemarks.forEach(pm => {
+          pm.options.set('iconImageSize', [180, 180]);
+        });
+
+        placemarks[index].options.set('iconImageSize', [220, 220]);
+
+        const shiftedCoords = getShiftedCoords(coordinatesArray[index]);
+
+        myMap.panTo(shiftedCoords, {
+          flying: true,
+          duration: 800,
+          timingFunction: 'ease-in-out'
+        });
+      }
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    console.log('Screen width changed, new offset:', getOffsetByScreenWidth());
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const map1 = document.querySelector('#map1');
+  if (map1) {
     const coordinatesArray = [
       [55.694843, 37.435023],
       [55.831903, 37.411961],
@@ -2007,129 +2121,37 @@ if (map) {
       [55.744522, 37.616378]
     ];
 
-    function getOffsetByScreenWidth() {
-      const width = window.innerWidth;
-
-      if (width <= 576) {
-        return 0.000; // Центр для мобильных
-      } else if (width <= 768) {
-        return 0.000; // Центр для планшетов
-      } else if (width <= 992) {
-        return 0.000; // Центр для 992px
-      } else if (width <= 1200) {
-        return 0.006; // Смещение для 992-1200px
-      } else {
-        return 0.003; // Смещение для больших экранов
-      }
-    }
-
-    function getShiftedCoords(originalCoords) {
-      const offset = getOffsetByScreenWidth();
-      return [originalCoords[0], originalCoords[1] - offset];
-    }
-
-    const placemarks = coordinatesArray.map(coords => {
-      const placemark = createCustomIcon(coords);
-      myMap.geoObjects.add(placemark);
-      return placemark;
-    });
-
-    const mapLinks = document.querySelectorAll('.map-link');
-
-    mapLinks.forEach((link, index) => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        if (myMap && coordinatesArray[index]) {
-          placemarks.forEach(pm => {
-            pm.options.set('iconImageSize', [180, 180]);
-          });
-
-          placemarks[index].options.set('iconImageSize', [220, 220]);
-
-          const shiftedCoords = getShiftedCoords(coordinatesArray[index]);
-
-          myMap.panTo(shiftedCoords, {
-            flying: true,
-            duration: 800,
-            timingFunction: 'ease-in-out'
-          });
-        }
-      });
-    });
-
-    window.addEventListener('resize', () => {
-      console.log('Screen width changed, new offset:', getOffsetByScreenWidth());
-    });
-  };
-
-  function createCustomIcon(coords) {
-    return new ymaps.Placemark(coords, {}, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/icons/map2.svg',
-      iconImageSize: [180, 180],
-      iconImageOffset: [-90, -90]
-    });
+    initMapWithObserver(
+      map1,
+      'map1',
+      [55.694843, 37.435023],
+      15,
+      coordinatesArray
+    );
   }
-}
 
-// Карта 2
-const map2 = document.querySelector('#map2');
-if (map2) {
-  ymaps.ready(initMap2);
-
-  function initMap2() {
-    const myMap = new ymaps.Map('map2', {
-      center: [47.236556, 39.704179],
-      zoom: 15,
-      controls: ['zoomControl'],
-      behaviors: ['drag']
-    }, {
-      searchControlProvider: 'yandex#search'
-    });
-
-    function createCustomIcon(coords) {
-      return new ymaps.Placemark(coords, {}, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/icons/map2.svg',
-        iconImageSize: [180, 180],
-        iconImageOffset: [-90, -90]
-      });
-    }
-
-    const myPlacemark = createCustomIcon([47.236556, 39.704179]);
-    myMap.geoObjects.add(myPlacemark);
+  const map2 = document.querySelector('#map2');
+  if (map2) {
+    initMapWithObserver(
+      map2,
+      'map2',
+      [47.236556, 39.704179],
+      15,
+      [47.236556, 39.704179]
+    );
   }
-}
 
-// Карта 3
-const map3 = document.querySelector('#map3');
-if (map3) {
-  ymaps.ready(initMap3);
-
-  function initMap3() {
-    const myMap = new ymaps.Map('map3', {
-      center: [56.998387, 40.966734],
-      zoom: 15,
-      controls: ['zoomControl'],
-      behaviors: ['drag']
-    }, {
-      searchControlProvider: 'yandex#search'
-    });
-
-    function createCustomIcon(coords) {
-      return new ymaps.Placemark(coords, {}, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/icons/map2.svg',
-        iconImageSize: [180, 180],
-        iconImageOffset: [-90, -90]
-      });
-    }
-
-    const myPlacemark = createCustomIcon([56.998387, 40.966734]);
-    myMap.geoObjects.add(myPlacemark);
+  const map3 = document.querySelector('#map3');
+  if (map3) {
+    initMapWithObserver(
+      map3,
+      'map3',
+      [56.998387, 40.966734],
+      15,
+      [56.998387, 40.966734]
+    );
   }
-}
+});
 
 //========================================================================================================================================================
 
