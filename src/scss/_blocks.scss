@@ -148,6 +148,12 @@
             @media (max-width: 768px) {
                 gap: 20px;
             }
+            .options__icon {
+                &::after {
+                    content: "";
+                    background: transparent;
+                }
+            }
             .btn {
                 min-width: 333px;
                 margin: 0px 0px 0px 0px;
@@ -211,12 +217,6 @@
             @media (max-width: 992px) {
                 text-align: center;
                 max-width: 450px;
-            }
-        }
-        .options__icon {
-            &::after {
-                content: "";
-                background: transparent;
             }
         }
     }
