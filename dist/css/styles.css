@@ -4010,6 +4010,10 @@ a {
     gap: 20px;
   }
 }
+.block-intro__content .form .options__icon::after {
+  content: "";
+  background: transparent;
+}
 .block-intro__content .form .btn {
   min-width: 333px;
   margin: 0px 0px 0px 0px;
@@ -4085,10 +4089,6 @@ a {
     text-align: center;
     max-width: 450px;
   }
-}
-.block-intro__content .options__icon::after {
-  content: "";
-  background: transparent;
 }
 .block-intro__heading-complex {
   display: -webkit-box;
