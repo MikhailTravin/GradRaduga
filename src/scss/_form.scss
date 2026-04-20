@@ -39,6 +39,13 @@
         }
     }
 
+    // .form__inputs2
+
+    &__inputs2 {
+        width: 100%;
+        margin-top: 15px;
+    }
+
     // .form__input
 
     &__input {
@@ -79,6 +86,26 @@
                 height: 30px;
                 font-size: 18px;
                 padding: 0px 0px 10px 0px;
+            }
+            @media (max-width: 480px) {
+                font-size: 16px;
+            }
+        }
+        textarea {
+            width: 100%;
+            position: relative;
+            z-index: 5;
+            height: 122px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            resize: none;
+            &::placeholder {
+                color: rgba(30, 30, 30, 0.8);
+            }
+            @media (max-width: 768px) {
+                font-size: 18px;
+                height: 100px;
             }
             @media (max-width: 480px) {
                 font-size: 16px;

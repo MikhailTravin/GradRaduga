@@ -72,6 +72,33 @@
     }
 }
 
+.swiper-pagination {
+    position: absolute;
+    top: auto !important;
+    bottom: 10px !important;
+    left: 50% !important;
+    transform: translate(-50%, 0px);
+    z-index: 10;
+    justify-content: center;
+    gap: 4px;
+    width: calc(100% - 30px) !important;
+    display: none;
+    @media (max-width: 768px) {
+        display: flex;
+    }
+    .swiper-pagination-bullet {
+        flex: 0 1 10px;
+        border-radius: 4px;
+        height: 3px;
+        background-color: rgba(243, 237, 229, 0.5);
+        margin: 0px !important;
+        opacity: 1 !important;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #f3ede5;
+    }
+}
+
 .swiper-button-lock {
     display: none;
 }
