@@ -1455,6 +1455,34 @@ if (document.querySelector('.images-product')) {
   });
 }
 
+document.querySelectorAll('.card-product__images').forEach((block, index) => {
+  const slider1 = block.querySelector('.card-product__slider');
+  if (!slider1) return;
+
+  const prevArrow = block.querySelector('.card-product__arrow-prev');
+  const nextArrow = block.querySelector('.card-product__arrow-next');
+  const pagination = block.querySelector('.card-product__pagination');
+
+  if (prevArrow && nextArrow) {
+
+    new Swiper(slider1, {
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      speed: 400,
+      navigation: {
+        prevEl: prevArrow,
+        nextEl: nextArrow,
+      },
+      pagination: {
+        el: pagination,
+        clickable: true,
+      }
+    });
+  }
+});
+
 //========================================================================================================================================================
 
 //Звездный рейтинг
